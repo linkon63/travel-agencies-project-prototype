@@ -6,8 +6,8 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: () => import('../components/Home.vue'),
+      name: 'Landing',
+      component: () => import('../components/Landing/Landing.vue'),
     },
     {
       path: '/about',
@@ -35,22 +35,29 @@ const router = createRouter({
     },
     {
       path: '/umrah-packages-details',
-      name: '',
+      name: 'umrah-packages-details',
 
       component: () => import('../components/PackageDetails/PackageDetails.vue')
     },
     {
       path: '/terms-and-condition',
-      name: '',
+      name: 'terms-and-condition',
 
       component: () => import('../components/TermsAndCondition/TermsAndCondition.vue')
     },
     {
-      path: '/',
-      name: '',
+      path: '/photo-gallery',
+      name: 'photo-gallery',
 
-      component: () => import('../components/')
+      component: () => import('../components/PhotoGallery/PhotoGallery.vue')
     },
+    {
+      path: '/faq',
+      name: 'faq',
+
+      component: () => import('../components/Faq/Faq.vue')
+    },
+
 
   ]
 })
