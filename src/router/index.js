@@ -8,6 +8,11 @@ const router = createRouter({
       name: 'home',
       component: () => import('../components/Home.vue'),
     },
+    {
+      path:'/Carousel',
+      name:'Carousel',
+      component:() => import ('@/components/About/Carousel.vue')
+    }
 
   ],
 })
