@@ -4,7 +4,7 @@
 <template>
  <section class="mb-20">
   <!-- About heeade start -->
-  <section class="bg-hero-pattern text-center text-white" >
+  <section class="bg-hero-pattern  text-center text-white" >
    <div class=" bg-markcolor opacity-70 py-28">
     <h1 class="text-h2 font-semibold ">About Us</h1>
     <div class="text-title  font-thin space-x-5">
@@ -19,29 +19,29 @@
   <section class="mb-20">
     <div class="grid lg:grid-cols-2 container mx-auto mt-14 gap-x-5">
       <!-- text section start -->
-      <div class="grid">
-        <h1 class="rd text-textpera text-h1 font-semibold leading-tight">Enjoy Your Awesome Trip with Jicsom Travels</h1>
+      <div class="grid xs:px-2">
+        <h1 class="rd text-textpera xs:text-h4 xs:font-bold lg:text-h1 font-semibold leading-tight">Enjoy Your Awesome Trip with Jicsom Travels</h1>
         <p class="text-textpera my-8">Jicson Travel is a dynamic and customer-focused travel agency that offers a wide range of travel services, including flight bookings, hotel booking, Visa, accommo- dations, vacation packages, and personalized travel itineraries. Our mission is to provide hassle-free travel experiences and make the process of planning and booking trips easy and enjoyable for our customers.</p>
-        <div class="grid gap-y-6">
-          <div class="flex space-x-6">
-            <img class="w-[50px] object-contain" src="../About/img/earthP.png" alt="">
+        <div class="grid xs:gap-y-3 lg:gap-y-6">
+          <div class="flex xs:space-x-2 md:space-x-6">
+            <img class="xs:w-[30px] md:w-[50px] object-contain" src="../About/img/earthP.png" alt="">
             <div class="grid">
-              <h3 class="text-h4 font-bold text-textpera">Best Travel Pack</h3>
-              <p class="text-textpera">The best travel pack is durable, organized, and comfortable.</p>
+              <h3 class=" lg:text-h4 font-bold text-textpera">Best Travel Pack</h3>
+              <p class="xs:text-small text-textpera">The best travel pack is durable, organized, and comfortable.</p>
             </div>
           </div>
-          <div class="flex space-x-5">
-            <img class="w-[60px] object-contain" src="../About/img/viwe.png" alt="">
+          <div class="flex xs:space-x-1 md:space-x-5">
+            <img class="xs:w-[40px] md:w-[60px] object-contain" src="../About/img/viwe.png" alt="">
             <div class="grid">
-              <h3 class="text-h4 font-bold text-textpera">Airline Best Flights</h3>
-              <p class="text-textpera">Top airline flights offer comfort and value.</p>
+              <h3 class="lg:text-h4 font-bold text-textpera">Airline Best Flights</h3>
+              <p class="text-textpera xs:text-small">Top airline flights offer comfort and value.</p>
             </div>
           </div>
-          <div class="flex space-x-5">
-            <img class="w-[60px] object-contain" src="../About/img/earthL.png" alt="">
+          <div class="flex xs:space-x-1 md:space-x-5">
+            <img class="xs:w-[40px] md:w-[60px] object-contain" src="../About/img/earthL.png" alt="">
             <div class="grid">
-              <h3  class="text-h4 font-bold text-textpera">East Booking</h3>
-              <p class="text-textpera">Effortless East travel booking with convenience, reliability, and simplicity.</p>
+              <h3  class="lg:text-h4 font-bold text-textpera ">East Booking</h3>
+              <p class="text-textpera xs:text-small">Effortless East travel booking with convenience, reliability, and simplicity.</p>
             </div>
           </div>
 
@@ -52,13 +52,13 @@
 
 
       <!-- image section start -->
-      <div class="grid mt-10 relative">
-        <div class="  firstImg absolute left-28">
-          <img class=" object-contain rounded-3xl" src="./img/des.jpg" alt="">
+      <div class="grid mt-10 xs:px-3 md:relative">
+        <div class="firstImg xs:relative md:absolute lg:left-28">
+          <img class="xs:w-52 object-contain lg:rounded-3xl" src="./img/des.jpg" alt="">
         </div>
 
-        <div class="absolute bottom-0 -left-4 secImg">
-          <img class=" w-96 rounded-lg " src="../About/img/travel.jpg" alt="">
+        <div class="absolute lg:bottom-0 lg:-left-4 secImg">
+          <img class="xs:w-32 lg:w-96 lg:rounded-lg " src="../About/img/travel.jpg" alt="">
         </div>
       </div>
       <!-- image section end -->
@@ -68,28 +68,32 @@
 
    <!-- 3rd part start -->
     <section class=" bg-secondary">
-      <div class="container mx-auto">
-        <div class="flex justify-between items-center text-number px-14 py-12">
+      <div class="container mx-auto xs:space-y-5 md:space-y-0 xs:py-10 md:py-0">
+        <div class="grid grid-cols-2 place-content-center  xs:space-y-5 lg:flex lg:justify-between items-center text-number  md:px-14 md:py-12">
           <div class="grid place-items-center">
-            <h1 class="text-h2 font-bold">5+</h1>
-            <p>Years of Experience</p>
+            <h1 class="xs:text-h3 md:text-h2 font-bold">5+</h1>
+            <p class="xs:text-small">Years of Experience</p>
           </div>
           <div class="grid place-items-center">
-            <h1 class="text-h2 font-bold">450+</h1>
-            <p>Camping Destination</p>
+            <h1 class="xs:text-h3 md:text-h2 font-bold">450+</h1>
+            <p class="xs:text-small">Camping Destination</p>
           </div>
           <div class="grid place-items-center">
-            <h1 class="text-h2 font-bold">2.5k+</h1>
-            <p>Happy Customer</p>
+            <h1 class="xs:text-h3 md:text-h2 font-bold">2.5k+</h1>
+            <p class="xs:text-small">Happy Customer</p>
           </div>
           <div class="grid place-items-center">
-            <h1 class="text-h2 font-bold">48+</h1>
-            <p>Country Served</p>
+            <h1 class="xs:text-h3 md:text-h2 font-bold">48+</h1>
+            <p class="xs:text-small">Country Served</p>
           </div>
-          <div class="grid place-items-center">
-            <h1 class="text-h2 font-bold">4.9 <i class="pi pi-star-fill text-[35px]"></i> </h1>
-            <p>Overall Rating</p>
+          <div class="grid hidden md:block place-items-center">
+            <h1 class="xs:text-h3 md:text-h2 font-bold">4.9 <i class="pi pi-star-fill xs:text-[25px] md:text-[35px]"></i> </h1>
+            <p class="xs:text-small">Overall Rating</p>
           </div>
+        </div>
+        <div class="grid md:hidden text-number place-items-center">
+          <h1 class="xs:text-h3 md:text-h2 font-bold">4.9 <i class="pi pi-star-fill xs:text-[25px] md:text-[35px]"></i> </h1>
+          <p class="xs:text-small">Overall Rating</p>
         </div>
 
       </div>
@@ -100,20 +104,20 @@
    <!-- 4th part start-->
 
    <section class="my-20 bg-white">
-    <div class="grid lg:grid-cols-2 relative">
-      <div class="container mx-auto  py-32 z-50 ">
-        <div class=" bg-secondary vision absolute w-[53%] space-y-3 py-24  ps-40 pe-16 ">
+    <div class="grid grid-cols-1 lg:grid-cols-2  lg:relative">
+      <div class="container mx-auto  md:py-32 z-50 ">
+        <div class=" lg:bg-secondary vision xs:px-3 xs:mb-10 lg:mb-0  lg:absolute lg:w-[53%] space-y-3 lg:py-24  lg:ps-40 lg:pe-16 ">
           <h1 class="text-h3 text-number font-bold">Vision</h1>
           <p class="text-textpera">At Jicson Travel, we aspire to be the most trusted and innovative travel agency, empowering people worldwide to explore the beauty and diversity of the world. We envision a future where every traveler enjoys a seamless and personalized journey, made possible through our cutting-edge technology, expert team, and strong global partnerships. Our commitment goes beyond providing exceptional services; we aim to promote sustainable and responsible tourism that preserves cultural heritage and protects the environment. By embracing innovation and delivering inspirational travel experiences, we strive to make every journey not only memorable but also meaningful, fostering a global community of adventurers who are confident and excited to discover the world.</p>
         </div>
       </div>
-      <div class="bg-primary1 py-16 px-32 rounded-s-[80px] text-white">
+      <div class="bg-primary1 xs:space-y-7 xs:py-10 lg:py-16 lg:px-32 xs:px-3 lg:rounded-s-[80px] text-white">
         <div class="grid">
-          <h1 class="text-h2 font-semibold">Mission</h1>
+          <h1 class="xs:text-h3 lg:text-h2 font-semibold">Mission</h1>
           <p class="text-subtile font-thin">"At Jicson Travel, our vision is to deliver seamless and unforgettable travel experiences by combining expert guidance, cutting-edge solutions, and exceptional service. We are dedicated to making every journey stress-free, enjoyable, and fully personalized, ensuring that each traveler’s unique preferences, needs, and dreams are at the heart of their travel experience. Through our deep industry knowledge, strong partnerships, and a commitment to innovation, we aim to create tailored travel solutions that empower our clients to explore the world with confidence. Our goal is not only to provide a service, but to inspire adventure, foster cultural understanding, and build lifelong memories that will stay with our clients long after they’ve returned home."</p>
         </div>
         <div class="grid">
-          <h1 class="text-h2 font-semibold">Goals</h1>
+          <h1 class="xs:text-h3 lg:text-h2 font-semibold">Goals</h1>
           <p class="text-subtile font-thin">At Jicson Travel, our goal is to provide exceptional, personalized travel experiences by focusing on customer satisfaction, ensuring every journey is tailored to individual needs. We aim to offer a comprehensive range of services, from flights and accommodations to customized itineraries, covering all aspects of travel. Embracing innovation and technology, we seek to streamline the booking process and provide smarter travel solutions. We are committed to promoting sustainable tourism by offering eco-friendly options and supporting local communities. Expanding our global reach, we aim to form strong partnerships with international suppliers to offer exclusive opportunities and competitive pricing. By fostering employee excellence, we ensure a team of passionate professionals dedicated to delivering outstanding service. Through these goals, we strive to be a leader in the travel industry, known for our commitment to quality, innovation, and customer care.</p>
         </div>
       </div>
@@ -124,77 +128,74 @@
 
    <!-- 5th part start -->
 
-   <section class="bg-white py-20">
+   <section class="bg-white xs:px-3 xs:pb-16 lg:py-20">
     <div class="container mx-auto">
       <div class="container mx-auto">
         <div class="grid gap-y-12">
           <div class="grid ">
-            <h1 class="text-number text-h3 font-bold">What Our Customer Say About Us</h1>
-            <p class="w-[60%] text-textpera">Jicsom Travel i dynamic & customer-focused travel agency that offers a wide range of travel services,including flight,hotel,Visa,Car Rent,vacation packages,& personalized travel itineraries</p>
+            <h1 class="text-textpera xs:text-h4 md:text-h3 xs:leading-7 font-bold">What Our Customer Say About Us</h1>
+            <p class="xs:mt-2 md:w-[60%] text-textpera">Jicsom Travel i dynamic & customer-focused travel agency that offers a wide range of travel services,including flight,hotel,Visa,Car Rent,vacation packages,& personalized travel itineraries</p>
           </div>
-          <div class="grid lg:grid-cols-3 gap-x-5">
+          <div class="grid lg:grid-cols-3 xs:gap-y-3 lg:gap-x-5">
             <div class="flex ">
-              <div class="bg-primary1 relative text-white cusImg flex justify-end items-end rounded-s-2xl">
+              <div class="bg-primary1 xs:px-2 relative text-white cusImg flex justify-end items-end rounded-s-2xl">
                 <img class="absolute z-50 man" src="./img/man1.png" alt="">
-                <img class="px-10 pb-20 quote" src="./img/quote.png" alt="">
-
-
+                <img class="lg:px-10 xs:w-36  xs:pb-16 lg:pb-20 quote" src="./img/quote.png" alt="">
               </div>
-              <div class="bg bg-cardbody rounded-e-2xl py-10 ps-14 pe-2">
-                <h1 class="text-h3 text-number font-bold">Md Dulal Hossain</h1>
-                <p class="text-number font-bold">UX Designer at Techfes</p>
-                <div class="flex space-x-3 py-4">
-                  <i class="pi pi-star-fill text-yellow-300  text-[20px]"></i>
-                  <i class="pi pi-star-fill text-yellow-300  text-[20px]"></i>
-                  <i class="pi pi-star-fill text-yellow-300  text-[20px]"></i>
-                  <i class="pi pi-star-fill text-yellow-300  text-[20px]"></i>
-                  <i class="pi pi-star-fill text-yellow-300 text-[20px]"></i>
+              <div class=" bg-cardbody rounded-e-2xl py-5 ps-8 lg:py-10 lg:ps-14 pe-2">
+                <h1 class="xs:text-xl lg:text-h3 text-number font-bold">Md Dulal Hossain</h1>
+                <p class="text-number xs:text-sm font-bold">UX Designer at Techfes</p>
+                <div class="flex xs:space-x-1 lg:space-x-3 py-4">
+                  <i class="pi pi-star-fill text-yellow-300  lg:text-[20px]"></i>
+                  <i class="pi pi-star-fill text-yellow-300  lg:text-[20px]"></i>
+                  <i class="pi pi-star-fill text-yellow-300  lg:text-[20px]"></i>
+                  <i class="pi pi-star-fill text-yellow-300  lg:text-[20px]"></i>
+                  <i class="pi pi-star-fill text-yellow-300 lg:text-[20px]"></i>
                 </div>
-                <p class="font-semibold text-textpera ">
+                <p class="text-[10px] font-semibold text-textpera ">
                   I was an a tight schedule for my trip to the UAE,and Jicson Travel made sure my visa was approved within a few days.Their tean was efficient and kept me informed at every step,which was...
                 </p>
                 <button class=" text-primary1 mt-3 font-semibold">Read More</button>
               </div>
             </div>
             <div class="flex ">
-              <div class="bg-primary1 relative text-white cusImg flex justify-end items-end rounded-s-2xl">
+              <div class="bg-primary1 xs:px-2 relative text-white cusImg flex justify-end items-end rounded-s-2xl">
                 <img class="absolute z-50 man" src="./img/man2.png" alt="">
-                <img class="px-10 pb-20" src="./img/quote.png" alt="">
-
+                <img class="lg:px-10 xs:w-36  xs:pb-16 lg:pb-20 quote" src="./img/quote.png" alt="">
               </div>
-              <div class="bg bg-cardbody rounded-e-2xl py-10 ps-14 pe-2">
-                <h1 class="text-h3 text-number font-bold">Marvin McKinney</h1>
-                <p class="text-number font-bold">Dog Trainer</p>
-                <div class="flex space-x-3 py-4">
-                  <i class="pi pi-star-fill text-yellow-300  text-[20px]"></i>
-                  <i class="pi pi-star-fill text-yellow-300  text-[20px]"></i>
-                  <i class="pi pi-star-fill text-yellow-300  text-[20px]"></i>
-                  <i class="pi pi-star-fill text-yellow-300  text-[20px]"></i>
-                  <i class="pi pi-star-fill text-yellow-300 text-[20px]"></i>
+              <div class="bg-cardbody rounded-e-2xl py-5 ps-8 lg:py-10 lg:ps-14 pe-2">
+                <h1 class="xs:text-xl lg:text-h3 text-number font-bold">Marvin McKinney</h1>
+                <p class="text-number xs:text-sm font-bold">Dog Trainer</p>
+                <div class="flex xs:space-x-1 lg:space-x-3 py-4">
+                  <i class="pi pi-star-fill text-yellow-300  lg:text-[20px]"></i>
+                  <i class="pi pi-star-fill text-yellow-300  lg:text-[20px]"></i>
+                  <i class="pi pi-star-fill text-yellow-300  lg:text-[20px]"></i>
+                  <i class="pi pi-star-fill text-yellow-300  lg:text-[20px]"></i>
+                  <i class="pi pi-star-fill text-yellow-300 lg:text-[20px]"></i>
                 </div>
-                <p class="font-semibold text-textpera ">
+                <p class="text-[10px] font-semibold text-textpera ">
                   "I’ve traveled a lot, but this was the first time I worked with a travel agency. The experience was top-notch! Jicson Travel’s expert advice and attention to detail ensured I had an unforgettable ...
                 </p>
                 <button class=" text-primary1 mt-3 font-semibold">Read More</button>
               </div>
             </div>
             <div class="flex ">
-              <div class="bg-primary1 relative text-white cusImg flex justify-end items-end rounded-s-2xl">
+              <div class="bg-primary1 xs:px-2 relative text-white cusImg flex justify-end items-end rounded-s-2xl">
                 <img class="absolute z-50 man" src="./img/man3.png" alt="">
-                <img class="px-10 pb-20 " src="./img/quote.png" alt="">
+                <img class="lg:px-10 xs:w-36  xs:pb-16 lg:pb-20 quote" src="./img/quote.png" alt="">
 
               </div>
-              <div class="bg bg-cardbody rounded-e-2xl py-10 ps-14 pe-2">
-                <h1 class="text-h3 text-number font-bold">Darrell Steward</h1>
-                <p class="text-number font-bold">Web Designer</p>
+              <div class="bg-cardbody rounded-e-2xl py-5 ps-8 lg:py-10 lg:ps-14 pe-2">
+                <h1 class="xs:text-xl lg:text-h3 text-number font-bold">Darrell Steward</h1>
+                <p class="text-number xs:text-sm font-bold">Web Designer</p>
                 <div class="flex space-x-3 py-4">
-                  <i class="pi pi-star-fill text-yellow-300  text-[20px]"></i>
-                  <i class="pi pi-star-fill text-yellow-300  text-[20px]"></i>
-                  <i class="pi pi-star-fill text-yellow-300  text-[20px]"></i>
-                  <i class="pi pi-star-fill text-yellow-300  text-[20px]"></i>
-                  <i class="pi pi-star-fill text-yellow-300 text-[20px]"></i>
+                  <i class="pi pi-star-fill text-yellow-300  lg:text-[20px]"></i>
+                  <i class="pi pi-star-fill text-yellow-300  lg:text-[20px]"></i>
+                  <i class="pi pi-star-fill text-yellow-300  lg:text-[20px]"></i>
+                  <i class="pi pi-star-fill text-yellow-300  lg:text-[20px]"></i>
+                  <i class="pi pi-star-fill text-yellow-300 lg:text-[20px]"></i>
                 </div>
-                <p class="font-semibold text-textpera ">
+                <p class="text-[10px] font-semibold text-textpera ">
                   "The visa application process for Albania can be confusing, but Jicson Travel took care of everything. They provided clear instructions, answered all my questions, and kept me updated throughout the ...
                 </p>
                 <button class=" text-primary1 mt-3 font-semibold">Read More</button>
@@ -211,17 +212,17 @@
    <!-- 5th part end -->
 
    <!-- 6th part start -->
-    <section class="bg-conbg py-20">
-      <div class="grid lg:grid-cols-2 container mx-auto gap-4">
-        <div class="bg-white py-20 px-24 grid rounded-xl">
-          <h1 class="text-textheader text-h3 font-semibold">Contact For Jicson Travels</h1>
+    <section class="bg-conbg xs:px-5 lg:px-0 py-20">
+      <div class="grid lg:grid-cols-2 container mx-auto lg:gap-4">
+        <div class="bg-white xs:px-4 xs:space-y-2 xs:py-8 lg:py-20 lg:px-24 grid rounded-xl">
+          <h1 class="text-textheader xs:text-h4 lg:text-h3 font-semibold">Contact For Jicson Travels</h1>
           <div class="flex justify-start items-start space-x-4">
             <div>
               <i class="pi pi-map-marker mt-3  "></i>
             </div>
             <div>
-              <h1 class="text-textheader text-h4 font-semibold">Our Office Address</h1>
-              <p class=" text-textc font-semibold">H- 79, 4th Floor, New Airport Road, Chairman Bari, Banani, Dhaka, Bangladesh, 1213</p>
+              <h1 class="text-textheader lg:text-h4 font-semibold">Our Office Address</h1>
+              <p class=" text-textc xs:text-[12px] font-semibold">H- 79, 4th Floor, New Airport Road, Chairman Bari, Banani, Dhaka, Bangladesh, 1213</p>
             </div>
           </div>
           <div class="flex justify-start items-start space-x-4">
@@ -229,8 +230,8 @@
               <i class="pi pi-headphones mt-3 "></i>
             </div>
             <div>
-              <h1 class="text-textheader text-h4 font-semibold">Call</h1>
-              <p class=" text-textc font-semibold">+880 1994-901050</p>
+              <h1 class="text-textheader lg:text-h4 font-semibold">Call</h1>
+              <p class=" text-textc xs:text-[12px] font-semibold">+880 1994-901050</p>
             </div>
           </div>
           <div class="flex justify-start items-start space-x-4">
@@ -238,16 +239,16 @@
               <i class="pi pi-envelope mt-3 "></i>
             </div>
             <div>
-              <h1 class="text-textheader text-h4 font-semibold">E-mail</h1>
-              <p class=" text-textc font-semibold">jicsontravels@gmail.com</p>
+              <h1 class="text-textheader lg:text-h4 font-semibold">E-mail</h1>
+              <p class=" text-textc xs:text-[12px] font-semibold">jicsontravels@gmail.com</p>
             </div>
           </div>
         </div>
 
-        <div class="bg-white p-12 grid gap-y-6 rounded-xl">
+        <div class="bg-white xs:px-3 xs:py-8 lg:p-12 grid gap-y-6 rounded-xl">
           <h1 class="text-textheader text-h4 font-semibold ">Your Details</h1>
 
-          <div class="grid grid-cols-2 gap-x-5">
+          <div class="grid xs:gap-y-4 lg:gap-y-0 lg:grid-cols-2 gap-x-5">
             <div class="">
               <label for="name" class="text-textheader text-xl">Name*</label> <br>
               <input class=" w-full border-[#D9D9D9] rounded-lg" id="name" type="text" placeholder="Name">
@@ -270,7 +271,7 @@
           </div>
           <div>
             <label for="mgs" class="text-textheader text-xl">Your Message (optional)</label> <br>
-            <textarea rows="5" id="mgs" class="w-full resize-none border-[#D9D9D9] rounded-e-lg text-[#D9D9D9] " placeholder="Writing the Message"></textarea>
+            <textarea rows="5" id="mgs" class="w-full resize-none border-[#D9D9D9] rounded-lg text-[#D9D9D9] " placeholder="Writing the Message"></textarea>
 
             <button class="bg-primary1 py-2 px-6 text-white rounded-md mt-5" >Submit</button>
           </div>
@@ -336,5 +337,99 @@ right:-30px ;
   bottom: -35px;
   right: 0;
 }
+
+
+
+@media screen and (min-width:320px) {
+
+  .firstImg{
+    border-top: 1px solid #D9D9D9;
+    margin-left: 65px;
+    padding-top: 10px;
+    border-radius: 10px;
+    border-left: #D9D9D9 1px solid;
+    padding-left: 10px;
+
+
+  }
+  .secImg {
+    margin-top: 100px;
+    margin-left: 15px;
+    border-top: 1px solid #D9D9D9;
+    padding-top: 8px;
+    border-radius: 10px;
+    border-left: 1px solid #D9D9D9;
+    padding-left: 8px;
+    border-bottom: 1px solid #D9D9D9;
+    border-right: 1px solid #D9D9D9;
+  }
+
+  .vision::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    display: none;
+    border-left: 30px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 35px solid rgba(255, 255, 255, 0.738);
+    top: -35px;
+    right: 0;
+  }
+  .vision::before{
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    display: none;
+    border-right: 60px solid transparent;
+    border-top: 35px solid rgba(255, 255, 255, 0.738);
+    bottom: -35px;
+    right: 0;
+  }
+
+
+  .cusImg .man{
+    height:60px;
+    width: 60px;
+    top: 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+    right:-24px ;
+
+    }
+
+}
+
+@media screen and (min-width:1440px) {
+
+  .vision::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    display: block;
+    border-left: 30px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 35px solid rgba(255, 255, 255, 0.738);
+    top: -35px;
+    right: 0;
+  }
+  .vision::before{
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    display: block;
+    border-right: 60px solid transparent;
+    border-top: 35px solid rgba(255, 255, 255, 0.738);
+    bottom: -35px;
+    right: 0;
+  }
+
+
+
+}
+
 
 </style>
