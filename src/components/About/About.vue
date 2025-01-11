@@ -213,7 +213,7 @@
 
    <!-- 6th part start -->
     <section class="bg-conbg xs:px-5 lg:px-0 py-20">
-      <div class="grid lg:grid-cols-2 container mx-auto lg:gap-4">
+      <div class="grid lg:grid-cols-2 container mx-auto xs:gap-y-5 lg:gap-4">
         <div class="bg-white xs:px-4 xs:space-y-2 xs:py-8 lg:py-20 lg:px-24 grid rounded-xl">
           <h1 class="text-textheader xs:text-h4 lg:text-h3 font-semibold">Contact For Jicson Travels</h1>
           <div class="flex justify-start items-start space-x-4">
