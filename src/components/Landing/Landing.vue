@@ -1,5 +1,15 @@
-<script setup></script>
+<script setup>
+import Hero from './Hero.vue';
+import Offer from './Offer.vue';
+
+
+</script>
+
 <template>
-  <Navbar />
-  <h4>landing</h4>
+<Hero/>
+<Offer/>
 </template>
+
+<style scoped>
+/* Custom styles if needed */
+</style>
