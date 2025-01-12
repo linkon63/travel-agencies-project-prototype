@@ -1,12 +1,14 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/Home.vue'
+// import PackageDetails from './components/PackageDetails/PackageDetails.vue'
+import TermsAndCondition from './components/TermsAndCondition/TermsAndCondition.vue';
 </script>
 
 <template>
-
-
-  <RouterView />
+   
+  <TermsAndCondition />
+  
 </template>
 
 <style scoped>
