@@ -23,7 +23,12 @@ const router = createRouter({
       path:'/BlogDetails',
       name:'Blog-Details',
       component:() => import('@/components/Blog/BlogDetails.vue')
-    }
+    },
+    {
+      path:'/PhotoGallery',
+      name:'PhotoGallery',
+      component:() => import ('@/components/PhotoGallery/PhotoGallery.vue')
+    },
 
   ],
 })

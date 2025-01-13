@@ -8,7 +8,7 @@
       <!-- Blog-Details header start -->
       <section class="bg-hero-pattern  text-center text-white" >
         <div class=" bg-markcolor opacity-70 py-28">
-         <h1 class="text-h2 font-semibold ">Our Blog</h1>
+         <h1 class="text-h2 font-semibold ">Blog Details</h1>
          <div class="text-title  font-thin space-x-1">
            <a href=""><i class="pi pi-home"></i> Home</a>
            <a href=""><i class="pi pi-angle-right"></i>Our Blog</a>
