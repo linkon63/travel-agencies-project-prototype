@@ -7,7 +7,7 @@
         </h1>
 
         <div
-          class="bg-white xs:px-4 xs:space-y-2 xs:py-8 md:px-10 lg:p-12 xl:py-20 xl:px-24 grid rounded-xl"
+          class="bg-white xs:px-4 xs:space-y-2 xs:py-8 md:px-10 lg:px-0 xl:py-20 xl:px-2 grid rounded-xl"
         >
           <h1 class="text-textheader xs:text-h4 md:text-h3 font-semibold lg:text-h4">
             Contact For Jicson Travels

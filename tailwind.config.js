@@ -54,7 +54,9 @@ export default {
         'textpera':'#5F5F5F',
         'number':'#423D3D',
         'textc':'#6E6E73',
-        'conbg' : '#EEEEF5'
+        'conbg' : '#EEEEF5',
+        'lightb':'#E1F1FE',
+
       }
     },
   },
