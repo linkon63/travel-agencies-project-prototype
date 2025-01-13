@@ -1,10 +1,11 @@
 <script setup>
 import offerBg from '@/assets/Images/Offer-cardBg.png'
+import Service from './Service.vue'
 </script>
 
 <template>
-  <section class="py-12" :style="{ backgroundImage: `url(${offerBg})` }">
-    <div class="container mx-auto px-4 w-11/12 h-[332px] top-[972px] left-[183px]">
+  <section class="pt-12 inset-0 z-0" :style="{ backgroundImage: `url(${offerBg})` }">
+    <div class="container mx-auto px-4 w-11/12 h-[332px] left-[183px] z-20">
       <!-- Title and Description -->
       <div class="text-center mb-8">
         <h2
@@ -21,26 +22,39 @@ import offerBg from '@/assets/Images/Offer-cardBg.png'
         </p>
       </div>
 
-      <div class="grid grid-cols-3 gap-4 p-4">
-        <!-- Card 1 -->
-        <img
-          src="../../assets/Images/Offer-card-1.png"
-          class="h-[220px] rounded-sm shadow-md"
-          alt="Offer Card 1"
-        />
-        <!-- Card 2 -->
-        <img
-          src="../../assets/Images/Offer-card-2.png"
-          class="h-[220px] rounded-sm shadow-md"
-          alt="Offer Card 2"
-        />
-        <!-- Card 3 -->
-        <img
-          src="../../assets/Images/Offer-card-3.png"
-          class="h-[220px] rounded-sm shadow-md"
-          alt="Offer Card 3"
-        />
+      <div class="grid grid-cols-4 items-center justify-center p-4">
+        <!-- Left Arrow -->
+        <button class="absolute left-10 z-10 bg-white shadow-lg p-2 rounded-full hover:bg-gray-200">
+          <img src="../../assets/Images/left-icon.png" alt="Left Arrow" class="w-6 h-6" />
+        </button>
+        <div class="col-span-4 grid grid-cols-3 gap-4">
+          <!-- Card 1 -->
+          <img
+            src="../../assets/Images/Offer-card-1.png"
+            class="h-[220px] rounded-sm shadow-md"
+            alt="Offer Card 1"
+          />
+          <!-- Card 2 -->
+          <img
+            src="../../assets/Images/Offer-card-2.png"
+            class="h-[220px] rounded-sm shadow-md"
+            alt="Offer Card 2"
+          />
+          <!-- Card 3 -->
+          <img
+            src="../../assets/Images/Offer-card-3.png"
+            class="h-[220px] rounded-sm shadow-md"
+            alt="Offer Card 3"
+          />
+        </div>
+        <!-- Right Arrow -->
+        <button
+          class="absolute right-10 z-10 bg-white shadow-lg p-2 rounded-full hover:bg-gray-200"
+        >
+          <img src="../../assets/Images/right-icon.png" alt="Right Arrow" class="w-6 h-6" />
+        </button>
       </div>
     </div>
+    <Service />
   </section>
 </template>

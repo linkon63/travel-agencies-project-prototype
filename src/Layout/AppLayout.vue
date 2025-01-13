@@ -2,7 +2,7 @@
 import Navbar from '../components/Shared/Navbar.vue'
 </script>
 <template>
-  <div class="layout-wrapper" :class="containerClass">
+  <div class="layout-wrapper overflow-hidden" :class="containerClass">
     <Navbar  />
      <!-- <h1>header</h1> -->
     <div class="mt-2">

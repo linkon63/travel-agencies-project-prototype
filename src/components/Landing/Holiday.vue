@@ -1,0 +1,97 @@
+<script setup>
+import HolidayCard1 from '../../assets/Images/Holiday-1.png';
+import HolidayCard2 from '../../assets/Images/Holiday-2.png';
+import HolidayCard3 from '../../assets/Images/Holiday-3.png';
+import HolidayCard4 from '../../assets/Images/Holiday-4.png';
+const HoliDays = [
+  {
+    id: 1,
+    title: 'Azad Kashmir, India',
+    description:
+      'Azad Kashmir borders the Pakistani provinces of Punjab and Khyber Pakhtunkhwa to the south.',
+    src: HolidayCard1,
+    rating: 5,
+    reviews: 120,
+  },
+  {
+    id: 2,
+    title: 'Bangkok, Thailand',
+    description:
+      'Bangkok is renowned for its vibrant street life, rich cultural heritage, and majestic temples.',
+      src: HolidayCard2,
+    rating: 5,
+    reviews: 120,
+  },
+  {
+    id: 3,
+    title: 'Dubai',
+    description:
+      'Dubai is the most populous city in the United Arab Emirates (UAE) and the capital of the Emirate.',
+      src: HolidayCard3,
+    rating: 5,
+    reviews: 120,
+  },
+  {
+    id: 4,
+    title: 'Singapore',
+    description:
+      'Singapore is a unitary parliamentary republic with a Westminster system of unicameral parliamentary.',
+      src: HolidayCard4,
+    rating: 5,
+    reviews: 120,
+  },
+]
+</script>
+<template>
+  <section class="py-16  text-[#545454]">
+    <div class=" mx-auto px-4 w-10/12 ">
+      <h2 class="text-start text-3xl font-bold font-sans  mb-4">
+        Our Holiday Packages <span>😊</span>
+      </h2>
+      <p class="text-start text-[#5F5F5F] font-sans  mb-8 w-[712px]">
+        Jicsom Travel is a dynamic & customer-focused travel agency that offers a wide range of
+        travel services, including flight, hotel, Visa, Car Rent, vacation packages, & personalized
+        travel itineraries.
+      </p>
+      <div class="flex items-center ">
+
+
+      <!-- Left Arrow -->
+ <button class="absolute left-10 z-10 bg-white shadow-lg p-2 rounded-full hover:bg-gray-200">
+          <img src="../../assets/Images/left-icon.png" alt="Left Arrow" class="w-6 h-6" />
+        </button>
+      <!-- Cards Container -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <!-- Card Loop -->
+        <div
+          v-for="Holiday in HoliDays"
+          :key="Holiday.id"
+          class="bg-white rounded-md  hover:shadow-lg transition-shadow"
+        >
+          <img
+            :src="Holiday.src"
+            :alt="Holiday.title"
+            class="w-full h-48 object-cover rounded-t-lg"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-[#545454]">{{ Holiday.title }}</h3>
+            <p class="text-sm text-[#5F5F5F] mb-3">{{ Holiday.description }}</p>
+            <div class="flex items-center text-yellow-500">
+              <span class="text-lg pi pi-star-fill"></span>
+              <span class="text-sm ml-1 text-gray-700"
+                >{{ Holiday.rating }} ({{ Holiday.reviews }} Reviews)</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Right Arrow -->
+      <button
+          class="absolute right-10 z-10 bg-white shadow-lg p-2 rounded-full hover:bg-gray-200"
+        >
+          <img src="../../assets/Images/right-icon.png" alt="Right Arrow" class="w-6 h-6" />
+        </button>
+      </div>
+    </div>
+  </section>
+</template>

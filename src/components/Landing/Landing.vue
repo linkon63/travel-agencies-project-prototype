@@ -1,13 +1,17 @@
 <script setup>
 import Hero from './Hero.vue';
+import Holiday from './Holiday.vue';
 import Offer from './Offer.vue';
+import Visa from './Visa.vue';
 
 
 </script>
 
-<template>
+<template >
 <Hero/>
 <Offer/>
+<Visa/>
+<Holiday/>
 </template>
 
 <style scoped>
