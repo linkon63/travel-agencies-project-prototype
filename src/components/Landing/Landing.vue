@@ -2,6 +2,7 @@
 import Hero from './Hero.vue';
 import Holiday from './Holiday.vue';
 import Offer from './Offer.vue';
+import Team from './Team.vue';
 import Visa from './Visa.vue';
 
 
@@ -12,6 +13,7 @@ import Visa from './Visa.vue';
 <Offer/>
 <Visa/>
 <Holiday/>
+<Team/>
 </template>
 
 <style scoped>
