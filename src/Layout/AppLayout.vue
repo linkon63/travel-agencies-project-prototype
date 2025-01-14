@@ -1,4 +1,5 @@
 <script setup>
+import Footer from '@/components/Shared/Footer.vue';
 import Navbar from '../components/Shared/Navbar.vue'
 </script>
 <template>
@@ -8,6 +9,6 @@ import Navbar from '../components/Shared/Navbar.vue'
     <div class="mt-2">
       <router-view></router-view>
     </div>
-    <h1>footer</h1>
+    <Footer/>
   </div>
 </template>
