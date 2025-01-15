@@ -1,4 +1,121 @@
-<script setup></script>
+<script setup>
+import { reactive } from 'vue';
+
+import ContactForm from '../About/ContactForm.vue';
+
+const states = reactive({
+  data:[
+    {
+      url:'/src/assets/Visa-img/img1.jpg',
+      title:'Saudi Arabia  5 Star Hotel Work Visa',
+      pera:'A work visa is usually required to work in Saudi Arabia, which is issued according to the rules and procedures set by the Saudi Arabian government.',
+      list:[
+        "Work Visa Process",
+        "Work Permit",
+        "Work Conditions and Benefits"
+      ]
+    },
+    {
+      url:'/src/assets/Visa-img/img2.jpg',
+      title:'Economy Umrah Package-Transit flight',
+      list:[
+        "13 Night 14 Days",
+        "Visa Air ticket, transport, Ziyarah & Guide",
+        "Accommodation in Makkah & Madinah",
+        "Travel Date: 00/00/00 and 00/00/00"
+      ]
+    },
+    {
+      url:'/src/assets/Visa-img/img3.jpg',
+      title:'Canada Work Visa',
+      pera:'A Canada Work Visa (also referred to as a work permit) allows foreign nationals to work in Canada for a specific employer, job, or time period.',
+      list:[
+        "Work Visa Process",
+        "Work Permit",
+        "Work Conditions and Benefits"
+      ]
+    },
+    {
+      url:'/src/assets/Visa-img/img4.jpg',
+      title:'Family Umrah Package',
+      list:[
+        "13 Night 14 Days",
+        "Visa Air ticket, transport, Ziyarah & Guide",
+        "Accommodation in Makkah & Madinah",
+        "Travel Date: 00/00/00 and 00/00/00"
+      ]
+    },
+  ]
+})
+
+</script>
 <template>
-  
+
+  <section class="mb-20">
+    <!-- Visa header start -->
+    <section class="bg-hero-pattern text-center text-white">
+      <div class="bg-markcolor opacity-70 py-28">
+        <h1 class="text-h2 font-semibold">Visa</h1>
+        <div class="text-title font-thin space-x-5">
+          <a href=""><i class="pi pi-home"></i> Home</a>
+          <a href=""><i class="pi pi-angle-right"></i> Visa</a>
+        </div>
+      </div>
+    </section>
+    <!-- Visa header end -->
+
+    <section>
+      <section class="container mx-auto my-10  ">
+        <div class="grid grid-cols-4 gap-4">
+          <!-- left side start -->
+          <div class=" ">
+
+          </div>
+            <!-- left side end -->
+
+          <!-- right side start -->
+          <div class="col-span-3">
+            <div class="gird space-y-7">
+              <div class="bg-conbg lg:px-3 lg:py-2 rounded-md">
+                <h1 class="text-textpera">32 Visa found</h1>
+              </div>
+              <!-- Card & details start -->
+
+              <div v-for="state in states.data" :key="state" class="grid grid-cols-3 p-4 bg-conbg rounded-lg place-items-start lg:gap-x-8">
+                <div class="">
+                  <img class="rounded-lg h-[270px] object-cover" :src="state.url" alt="">
+                </div>
+                <div class="col-span-2 space-y-1">
+                  <h1 class="text-[29px] font-semibold text-textheader">{{ state.title }}</h1>
+                  <p class=" text-textheader">{{state.pera}}</p>
+
+                  <ul v-for="list in state.list" :key="list" class="list-disc ps-4  text-textheader text-subtitle">
+                    <li>{{list}}</li>
+
+                  </ul>
+
+                  <p class="text-textheader text-subtitle font-bold">   <i class="pi pi-star-fill text-yellow-300 lg:text-[20px]"></i> 5 (120 Reviews)</p>
+
+                  <button class="text-[13px] md:text-[16px] md:px-3 lg:px-4 lg:py-2 md:rounded-md border border-primary1 text-primary1">View Details <i class="pi pi-arrow-up-right " style="font-size: 13px;"></i></button>
+
+                </div>
+              </div>
+              <!-- Card & details end -->
+
+              <div class="flex justify-center py-8">
+                <button class="border border-primary1 text-primary1 px-6 py-2 rounded-md" >Load Details <i class="pi pi-arrow-up-right " style="font-size: 13px;"></i></button>
+              </div>
+
+            </div>
+          </div>
+          <!-- right side end -->
+        </div>
+      </section>
+    </section>
+
+    <ContactForm/>
+
+
+  </section>
+
 </template>

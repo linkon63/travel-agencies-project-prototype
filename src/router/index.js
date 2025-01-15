@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
   routes: [
-    // {
-    //   path: '/',
-    //   name: 'home',
-    //   component: () => import('../components/Home.vue'),
-    // },
+    {
+      path: '/',
+      name: 'home',
+      component: () => import('../components/Home.vue'),
+    },
     {
       path:'/About',
       name:'About',
@@ -28,6 +28,11 @@ const router = createRouter({
       path:'/PhotoGallery',
       name:'PhotoGallery',
       component:() => import ('@/components/PhotoGallery/PhotoGallery.vue')
+    },
+    {
+      path:'/Visa',
+      name:'Visa',
+      component:() => import('@/components/Visa/Visa.vue')
     },
 
   ],

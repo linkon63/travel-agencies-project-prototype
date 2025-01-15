@@ -4,7 +4,7 @@ import ContactForm from './ContactForm.vue';
 
 <template>
   <section class="mb-20">
-    <!-- About heeade start -->
+    <!-- About header start -->
     <section class="bg-hero-pattern text-center text-white">
       <div class="bg-markcolor opacity-70 py-28">
         <h1 class="text-h2 font-semibold">About Us</h1>
@@ -14,7 +14,7 @@ import ContactForm from './ContactForm.vue';
         </div>
       </div>
     </section>
-    <!-- About heeade end -->
+    <!-- About header end -->
 
     <!-- 2nd part start -->
     <section class="mb-20">
@@ -231,7 +231,7 @@ import ContactForm from './ContactForm.vue';
                 >
                   <img class="absolute z-50 man" src="./img/man1.png" alt="" />
                   <img
-                    class="xl:px-10 xs:w-36 lg:w-60 xl:w-80 xs:pb-16 xl:pb-20 quote"
+                    class=" xs:w-36 lg:w-60 xl:w-80 2xl:w-52 xs:pb-16 xl:pb-20 quote"
                     src="./img/quote.png"
                     alt=""
                   />
@@ -264,7 +264,7 @@ import ContactForm from './ContactForm.vue';
                 >
                   <img class="absolute z-50 man" src="./img/man2.png" alt="" />
                   <img
-                    class="xl:px-10 xs:w-36 lg:w-60 xl:w-80 xs:pb-16 xl:pb-20 quote"
+                    class=" xs:w-36 lg:w-60 xl:w-80 2xl:w-52 xs:pb-16 xl:pb-20 quote"
                     src="./img/quote.png"
                     alt=""
                   />
@@ -297,7 +297,7 @@ import ContactForm from './ContactForm.vue';
                 >
                   <img class="absolute z-50 man" src="./img/man3.png" alt="" />
                   <img
-                    class="xl:px-10 xs:w-36 lg:w-60 xl:w-80 xs:pb-16 xl:pb-20 quote"
+                    class=" xs:w-36 lg:w-60 xl:w-80 2xl:w-52 xs:pb-16 xl:pb-20 quote"
                     src="./img/quote.png"
                     alt=""
                   />
