@@ -1,9 +1,9 @@
 <script setup></script>
 <template>
-  <section class=" h-[926px]  flex items-center justify-center mx-auto bg-[#E5F4FF] text-[#5F5F5F] bg-opacity-40 mt-24 ">
-    <div class="grid md:grid-cols-2 w-10/12 container px-5  mx-auto gap-x-10">
+  <section class="  py-10 flex items-center justify-center mx-auto bg-[#E5F4FF] text-[#5F5F5F] bg-opacity-40 mt-16 ">
+    <div class="grid md:grid-cols-2 w-11/12 sm:w-10/12 container px-5  mx-auto gap-x-10">
       <!-- Text Section -->
-      <div class="grid gap-y-4 h-[460px] items-center">
+      <div class="grid gap-y-4  items-center">
         <h1 class="font-bold text-[#545454] leading-tight h-[80px] font-sans text-3xl">
           Enjoy Your Awesome Trip with Jicson Travels
         </h1>
@@ -14,7 +14,7 @@
           travel experiences and make the process of planning and booking trips easy and enjoyable
           for our customers.
         </p>
-        <div class="space-y-6 h-[532px] ">
+        <div class="space-y-6  ">
           <!-- Feature 1 -->
           <div class="flex space-x-4 items-start">
             <img
@@ -64,7 +64,7 @@
       </div>
 
       <!-- Image Section -->
-      <div class="relative grid justify-center items-center h-[766px]">
+      <div class="relative mt-5 grid justify-center items-center h-[366px]">
         <!-- Main Image -->
         <div class="relative">
           <img

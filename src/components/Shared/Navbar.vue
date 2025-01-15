@@ -10,7 +10,7 @@ const toggleMobileMenu = () => {
 <template>
   <div class="flex justify-between items-center w-full relative bg-white boxShadow px-4 py-3">
     <!-- Logo Section -->
-    <div class="flex items-center justify-around px-4 py-3 w-full">
+    <div class="flex items-center justify-between lg:justify-around px-4 py-3 w-full">
       <div class="flex gap-2 items-center">
         <img src="../../assets/Images/logo.png" alt="logo" class="w-[100px] h-[40px]" />
       </div>

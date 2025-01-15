@@ -41,7 +41,7 @@ const visas = [
 
 <template>
   <section class="py-16 bg-[#F8F8F8] text-[#545454]">
-    <div class="w-10/12 mx-auto ">
+    <div class="w-11/12 md:w-10/12 mx-auto ">
       <!-- Title -->
       <h2 class="text-3xl font-bold text-[#545454] ">Special Visa</h2>
 
@@ -75,11 +75,11 @@ const visas = [
           <img src="../../assets/Images/left-icon.png" alt="Left Arrow" class="w-6 h-6" />
         </button>
       <!-- Visa Cards -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-full  mx-auto gap-2">
+      <div class="overflow-x-auto flex gap-4 px-2   mx-auto ">
         <div
           v-for="visa in visas"
           :key="visa.id"
-          class="rounded-md p-"
+          class="rounded-md min-w-[220px] md:min-w-[250px]"
         >
           <img
             :src="visa.src"
