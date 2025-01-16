@@ -4,7 +4,7 @@
     <div class="grid md:grid-cols-2 w-11/12 sm:w-10/12 container px-5  mx-auto gap-x-10">
       <!-- Text Section -->
       <div class="grid gap-y-4  items-center">
-        <h1 class="font-bold text-[#545454] leading-tight h-[80px] font-sans text-3xl">
+        <h1 class="font-bold mb-4 text-[#545454] leading-tight h-[80px] font-sans text-3xl">
           Enjoy Your Awesome Trip with Jicson Travels
         </h1>
         <p class="text-lg text-gray-600 font-normal leading-relaxed">

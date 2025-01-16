@@ -1,92 +1,111 @@
 <script setup>
-import visaCard1 from "../../assets/Images/visa-card-1.png";
-import visaCard2 from "../../assets/Images/visa-card-2.png";
-import visaCard3 from "../../assets/Images/visa-card-3.png";
-import visaCard4 from "../../assets/Images/visa-card-4.png";
+import { Navigation, Pagination } from 'swiper/modules'
+import 'swiper/swiper-bundle.css'
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import visaCard1 from '../../assets/Images/visa-card-1.png'
+import visaCard2 from '../../assets/Images/visa-card-2.png'
+import visaCard3 from '../../assets/Images/visa-card-3.png'
+import visaCard4 from '../../assets/Images/visa-card-4.png'
+
+import 'swiper/css/pagination'
+
+const modules = [Pagination, Navigation]
+
 const visas = [
   {
     id: 1,
-    title: "Umrah Visa Regular",
+    title: 'Umrah Visa Regular',
     src: visaCard1,
     rating: 5,
     reviews: 120,
-    category: "Umrah",
+    category: 'Umrah',
   },
   {
     id: 2,
-    title: "Hajj Visa",
+    title: 'Hajj Visa',
     src: visaCard2,
     rating: 5,
     reviews: 120,
-    category: "Umrah",
+    category: 'Umrah',
   },
   {
     id: 3,
-    title: "Dubai Work Visa",
+    title: 'Dubai Work Visa',
     src: visaCard3,
     rating: 5,
     reviews: 120,
-    category: "Work Visa",
+    category: 'Work Visa',
   },
   {
     id: 4,
-    title: "Saudi Arabia Work Visa",
+    title: 'Saudi Arabia Work Visa',
     src: visaCard4,
     rating: 5,
     reviews: 120,
-    category: "Work Visa",
+    category: 'Work Visa',
   },
-];
+]
 </script>
 
 <template>
-  <section class="py-16 bg-[#F8F8F8] text-[#545454]">
-    <div class="w-11/12 md:w-10/12 mx-auto ">
-      <!-- Title -->
-      <h2 class="text-3xl font-bold text-[#545454] ">Special Visa</h2>
+  <section class="py-16 bg-[#F8F8F8] text-[#545454] md:h-[752px]">
+    <div class="w-11/12 md:w-10/12 mx-auto">
+      <div class="flex justify-between mb-4">
+        <!-- Title -->
+        <h2 class="text-3xl font-bold text-[#545454]">Special Visa</h2>
 
-      <!-- Tabs -->
-      <div class="flex space-x-8 mb-2 justify-end">
-        <button
-          class="text-xl font-medium font-sans text-[#737373] before:w-0 hover:before:w-full before:bg-blue-600 before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-blue-600 transition-all duration-300 before:left-0 cursor-pointer"
-          :class="{'text-blue-600 font-semibold': activeTab === 'All'}"
-          @click="filterVisas('All')"
-        >
-          All
-        </button>
-        <button
-          class="text-xl font-medium font-sans text-[#737373] before:w-0 hover:before:w-full before:bg-blue-600 before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-blue-600 transition-all duration-300 before:left-0 cursor-pointer"
-          :class="{'text-blue-600 font-semibold': activeTab === 'Umrah'}"
-          @click="filterVisas('Umrah')"
-        >
-          Umrah
-        </button>
-        <button
-          class="text-xl font-medium font-sans text-[#737373] before:w-0 hover:before:w-full before:bg-blue-600 before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-blue-600 transition-all duration-300 before:left-0 cursor-pointer"
-          :class="{'text-blue-600 font-semibold': activeTab === 'Work Visa'}"
-          @click="filterVisas('Work Visa')"
-        >
-          Work Visa
-        </button>
+        <!-- Tabs -->
+        <div class="flex space-x-2 md:space-x-4 justify-end">
+          <button
+            class="text-xl font-medium font-sans text-[#737373] before:w-0 hover:before:w-full before:bg-blue-600 before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-blue-600 transition-all duration-300 before:left-0 cursor-pointer"
+            :class="{ 'text-blue-600 font-semibold': activeTab === 'All' }"
+            @click="filterVisas('All')"
+          >
+            All
+          </button>
+          <button
+            class="text-xl font-medium font-sans text-[#737373] before:w-0 hover:before:w-full before:bg-blue-600 before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-blue-600 transition-all duration-300 before:left-0 cursor-pointer"
+            :class="{ 'text-blue-600 font-semibold': activeTab === 'Umrah' }"
+            @click="filterVisas('Umrah')"
+          >
+            Umrah
+          </button>
+          <button
+            class="text-xl font-medium font-sans text-[#737373] before:w-0 hover:before:w-full before:bg-blue-600 before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-blue-600 transition-all duration-300 before:left-0 cursor-pointer"
+            :class="{ 'text-blue-600 font-semibold': activeTab === 'Work Visa' }"
+            @click="filterVisas('Work Visa')"
+          >
+            Work Visa
+          </button>
+        </div>
       </div>
-      <div class="flex items-center ">
- <!-- Left Arrow -->
- <button class="absolute left-10 z-10 bg-white shadow-lg p-2 rounded-full hover:bg-gray-200">
-          <img src="../../assets/Images/left-icon.png" alt="Left Arrow" class="w-6 h-6" />
-        </button>
-      <!-- Visa Cards -->
-      <div class="overflow-x-auto flex gap-4 px-2   mx-auto ">
-        <div
+      <swiper
+        :slidesPerView="3"
+        :spaceBetween="30"
+        :pagination="{
+          clickable: true,
+        }"
+        :navigation="true"
+        :modules="modules"
+        :breakpoints="{
+          320: { slidesPerView: 2, spaceBetween: 10 },
+          640: { slidesPerView: 3, spaceBetween: 20 },
+          1024: { slidesPerView: 4, spaceBetween: 30 },
+        }"
+        class="mySwiper"
+      >
+        <!-- Visa Cards -->
+        <swiper-slide
           v-for="visa in visas"
           :key="visa.id"
-          class="rounded-md min-w-[220px] md:min-w-[250px]"
+          class="rounded-md h-[266px] md:h-[480px] min-w-[160px] md:min-w-[250px]"
         >
           <img
             :src="visa.src"
             :alt="visa.title"
-            class="w-full h-48 object-cover rounded-t-lg"
+            class="w-full h-[148px] md:h-[348px] object-cover rounded-t-lg"
           />
-          <h3 class="mt-4 text-lg font-bold ">{{ visa.title }}</h3>
+          <h3 class="mt-2 text-lg font-semibold truncate">{{ visa.title }}</h3>
           <div class="flex items-center text-yellow-500 mt-2">
             <span class="pi pi-star-fill"></span>
             <span class="text-gray-600 text-sm ml-1">{{ visa.rating }}</span>
@@ -97,17 +116,14 @@ const visas = [
           >
             View Details <i class="pi pi-arrow-up-right px-1"></i>
           </button>
-        </div>
-      </div>
-      <!-- Right Arrow -->
-      <button
-          class="absolute right-10 z-10 bg-white shadow-lg p-2 rounded-full hover:bg-gray-200"
-        >
-          <img src="../../assets/Images/right-icon.png" alt="Right Arrow" class="w-6 h-6" />
-        </button>
-      </div>
+        </swiper-slide>
+      </swiper>
     </div>
   </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+.mySwiper {
+  padding: 20px 0;
+}
+</style>

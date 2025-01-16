@@ -48,51 +48,56 @@ const travelCards = [
         </button>
       </div>
       <!-- blog card start -->
-      <div class="grid lg:grid-cols-3 gap-4 items-center">
-        <!-- Left Arrow -->
-        <button class="absolute left-5 z-10 bg-white shadow-lg p-2 rounded-full hover:bg-gray-200">
-          <img :src="leftIcon" alt="Left Arrow" class="w-6 h-6" />
-        </button>
-        <!-- blog-cards -->
+      <div class="relative w-full">
+  <!-- Left Arrow -->
+  <button
+    class="absolute left-2 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow-lg p-2 rounded-full hover:bg-gray-200 hidden md:block"
+  >
+    <img :src="leftIcon" alt="Left Arrow" class="w-6 h-6" />
+  </button>
 
-        <div
-          v-for="(card, index) in travelCards"
-          :key="index"
-          class=" px-1 md:px-5 md:py-8 bg-white space-y-2 rounded-xl h-[674px]"
+  <!-- Scrollable Cards -->
+  <div class="overflow-x-auto flex gap-4 px-2 items-center">
+    <div
+      v-for="(card, index) in travelCards"
+      :key="index"
+      class="flex-shrink-0 bg-white rounded-xl p-4 space-y-3 h-auto w-[300px] md:w-[350px] lg:w-[400px] shadow-lg"
+    >
+      <h1 class="px-4 py-1 text-[#178EEF] bg-[#E1F1FE] rounded-full inline-block text-sm md:text-base">
+        {{ card.category }}
+      </h1>
+      <h1 class="text-[16px] md:text-[20px] font-bold text-textheader">
+        {{ card.title }}
+      </h1>
+      <p class="text-textheader text-[13px] md:text-[16px]">
+        {{ card.description }}
+      </p>
+      <img
+        :src="card.image"
+        class="rounded-lg h-[200px] md:h-[300px] object-cover w-full"
+        alt="Card Image"
+      />
+      <div class="flex flex-col md:flex-row md:items-center justify-between space-y-3 md:space-y-0">
+        <p class="text-textheader text-[13px] md:text-[16px]">
+          <i class="pi pi-calendar" style="color: #178EEF;"></i> {{ card.date }}
+        </p>
+        <button
+          class="text-[13px] md:text-[16px] px-3 py-1 font-sans rounded-md border border-[#178EEF] text-[#178EEF] transition-colors hover:bg-[#178EEF] hover:text-white"
         >
-          <h1 class="px-4 py-1 text-[#178EEF] bg-[#E1F1FE] rounded-full inline-block">
-            {{ card.category }}
-          </h1>
-          <h1 class="text-[17px] md:text-[20px] font-bold text-textheader">
-            <p class="hidden lg:inline">{{ card.title }}</p>
-          </h1>
-          <p class="text-textheader text-[13px] md:text-[16px]">
-            {{ card.description }}
-          </p>
-
-          <img
-            :src="card.image"
-            class="rounded-lg h-[370px] object-cover w-[421px]"
-            alt="Card Image"
-          />
-
-          <div class="grid space-y-1 md:flex justify-between md:pt-4 md:space-y-0">
-            <p class="text-textheader text-[13px] md:text-[16px]">
-              <i class="pi pi-calendar" style="color: #178EEF;"></i> {{ card.date }}
-            </p>
-            <button
-              class="text-[13px] md:text-[16px] md:px-3 font-sans md:rounded-md border border-[#178EEF] text-[#178EEF]"
-            >
-              View Details <i class="pi pi-arrow-up-right" style="font-size: 13px"></i>
-            </button>
-          </div>
-        </div>
-
-        <!-- Right Arrow -->
-        <button class="absolute right-5 z-10 bg-white shadow-lg p-2 rounded-full hover:bg-gray-200">
-          <img :src="rightIcon" alt="Right Arrow" class="w-6 h-6" />
+          View Details <i class="pi pi-arrow-up-right" style="font-size: 13px"></i>
         </button>
       </div>
+    </div>
+  </div>
+
+  <!-- Right Arrow -->
+  <button
+    class="absolute right-2 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow-lg p-2 rounded-full hover:bg-gray-200 hidden md:block"
+  >
+    <img :src="rightIcon" alt="Right Arrow" class="w-6 h-6" />
+  </button>
+</div>
+
     </div>
   </section>
 </template>
