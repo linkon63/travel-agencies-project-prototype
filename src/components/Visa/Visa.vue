@@ -1,6 +1,15 @@
 <script setup>
 import { reactive } from 'vue';
 
+import Slider from 'primevue/slider';
+import Accordion from 'primevue/accordion';
+import AccordionPanel from 'primevue/accordionpanel';
+import AccordionHeader from 'primevue/accordionheader';
+import AccordionContent from 'primevue/accordioncontent';
+
+import Checkbox from 'primevue/checkbox';
+
+
 import ContactForm from '../About/ContactForm.vue';
 
 const states = reactive({
@@ -68,8 +77,104 @@ const states = reactive({
       <section class="container mx-auto my-10  ">
         <div class="grid grid-cols-4 gap-4">
           <!-- left side start -->
-          <div class=" ">
+          <div class="space-y-12">
+            <div class="px-12">
+             <div class="border">
+              <div class="bg-conbg text-center py-2">
+                <h1 class="text-xl text-textheader font-semibold">Filter By Category</h1>
+              </div>
+              <Accordion value="0">
+                <AccordionPanel value="0">
+                    <AccordionHeader ><p class="text-primary1">Visa</p></AccordionHeader>
+                    <AccordionContent>
+                      <div class="gird ms-3 text-textheader font-semibold">
+                        <div class="flex justify-start items-center  gap-x-3">
+                          <Checkbox class="text-primary1" v-model="checked" binary /> Work Visa
+                        </div>
+                        <div class="flex justify-start items-center gap-x-3">
+                          <Checkbox v-model="checked" binary /> Umrah Visa
+                        </div>
 
+                      </div>
+                    </AccordionContent>
+                </AccordionPanel>
+            </Accordion>
+             </div>
+            </div>
+            <div class="px-12">
+              <div class="border">
+               <div class="bg-conbg text-center py-2">
+                 <h1 class="text-xl text-textheader font-semibold">Country</h1>
+               </div>
+               <div class="gird ms-3 p-4 space-y-3 text-textheader font-semibold">
+                <div class="flex justify-start items-center  gap-x-3">
+                  <Checkbox class="text-primary1" v-model="checked" binary /> Saudia Arabia
+                </div>
+                <div class="flex justify-start items-center gap-x-3">
+                  <Checkbox v-model="checked" binary /> Malaysia
+                </div>
+                <div class="flex justify-start items-center gap-x-3">
+                  <Checkbox v-model="checked" binary /> Dubai
+                </div>
+                <div class="flex justify-start items-center gap-x-3">
+                  <Checkbox v-model="checked" binary /> Qatar
+                </div>
+                <div class="flex justify-start items-center gap-x-3 ">
+                  <Checkbox v-model="checked" binary /> Canada
+                </div>
+
+              </div>
+              </div>
+             </div>
+             <div class="px-12">
+              <div class="border">
+               <div class="bg-conbg text-center py-2">
+                 <h1 class="text-xl text-textheader font-semibold">Prices</h1>
+               </div>
+               <div class="gird  px-4 py-8 space-y-5 text-textheader ">
+                <div class="flex justify-between items-center text-[#4A5D85]">
+                  <p>TK. 1200</p>
+                  <p>TK. 100000</p>
+                </div>
+                <div class="flex justify-center">
+                  <Slider v-model="value"  range class="w-60" />
+                </div>
+                <div class="flex justify-between items-center">
+                  <input type="number" class="w-24 py-1">
+                  <h1>To</h1>
+                  <input type="number" class="w-24 py-1 ">
+                </div>
+                <div class="flex justify-center items-center">
+                  <button class="border border-primary1 text-primary1 rounded-md px-12 py-2 font-bold">Search</button>
+                </div>
+              </div>
+              </div>
+             </div>
+             <div class="px-12">
+              <div class="border">
+               <div class="bg-conbg text-center py-2">
+                 <h1 class="text-xl text-textheader font-semibold">Prices</h1>
+               </div>
+               <div class="gird  p-4 space-y-3 text-textheader font-semibold">
+                <div class="flex justify-start items-center  gap-x-3">
+                  <Checkbox class="text-primary1" v-model="checked" binary /> 5 Star
+                </div>
+                <div class="flex justify-start items-center gap-x-3">
+                  <Checkbox v-model="checked" binary /> 4 Star
+                </div>
+                <div class="flex justify-start items-center gap-x-3">
+                  <Checkbox v-model="checked" binary /> 3 Star
+                </div>
+                <div class="flex justify-start items-center gap-x-3">
+                  <Checkbox v-model="checked" binary /> 2 Star
+                </div>
+                <div class="flex justify-start items-center gap-x-3 ">
+                  <Checkbox v-model="checked" binary /> 1 Star
+                </div>
+
+              </div>
+              </div>
+             </div>
           </div>
             <!-- left side end -->
 
@@ -119,3 +224,5 @@ const states = reactive({
   </section>
 
 </template>
+
+
