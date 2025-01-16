@@ -34,6 +34,11 @@ const router = createRouter({
       name:'Visa',
       component:() => import('@/components/Visa/Visa.vue')
     },
+    {
+      path:'/Contact',
+      name:'Contact',
+      component:() => import('@/components/Contact/Contact.vue')
+    },
 
   ],
 })
