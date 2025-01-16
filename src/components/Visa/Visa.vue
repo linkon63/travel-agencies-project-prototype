@@ -137,7 +137,7 @@ const states = reactive({
                   <p>TK. 100000</p>
                 </div>
                 <div class="flex justify-center">
-                  <Slider v-model="value"  range class="w-60" />
+                  <Slider v-model="value"  range class="w-60"  />
                 </div>
                 <div class="flex justify-between items-center">
                   <input type="number" class="w-24 py-1">
@@ -225,4 +225,11 @@ const states = reactive({
 
 </template>
 
+<style scoped>
 
+::v-deep(.p-slider-range) {
+  background-color: #555755 !important;
+}
+
+
+</style>
