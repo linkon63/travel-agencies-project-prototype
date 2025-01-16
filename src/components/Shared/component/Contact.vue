@@ -2,9 +2,9 @@
 
 <template>
   <section class="bg-[#EEEEF5] px-5 lg:px-0 py-20">
-    <div class="grid lg:grid-cols-2 container mx-auto gap-8 text-[#545454] w-10/12">
+    <div class="grid md:grid-cols-2 container mx-auto gap-8 text-[#545454] w-10/12">
       <!-- Contact Details Section -->
-      <div class="bg-white p-8 lg:py-20 lg:px-16 space-y-8 rounded-xl h-[368px] md:h-[596px]">
+      <div class="bg-white p-8 lg:py-20 lg:px-16 space-y-8 rounded-xl h-[450px] md:h-[596px]">
         <h1 class="text-3xl text-h4 lg:text-h3 font-bold text-[#545454]">
           Contact for Jicson Travels
         </h1>

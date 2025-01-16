@@ -3,7 +3,7 @@
   <section class="  py-10 flex items-center justify-center mx-auto bg-[#E5F4FF] text-[#5F5F5F] bg-opacity-40 mt-16 ">
     <div class="grid md:grid-cols-2 w-11/12 sm:w-10/12 container px-5  mx-auto gap-x-10">
       <!-- Text Section -->
-      <div class="grid gap-y-4  items-center">
+      <div class="grid gap-y-16 md:gap-y-4  items-center">
         <h1 class="font-bold mb-4 text-[#545454] leading-tight h-[80px] font-sans text-3xl">
           Enjoy Your Awesome Trip with Jicson Travels
         </h1>

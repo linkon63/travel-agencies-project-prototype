@@ -4,6 +4,14 @@ import galleryPhoto2 from '@/assets/Images/gallery-photo-2.png'
 import galleryPhoto3 from '@/assets/Images/gallery-photo-3.png'
 import galleryPhoto4 from '@/assets/Images/gallery-photo-small-1.png'
 import galleryPhoto5 from '@/assets/Images/gallery-photo-small-2.png'
+import { Navigation, Pagination } from 'swiper/modules'
+import 'swiper/swiper-bundle.css'
+import { Swiper, SwiperSlide } from 'swiper/vue'
+
+import 'swiper/css/pagination'
+
+const modules = [Pagination, Navigation]
+
 const galleryImages = [
   {
     src: galleryPhoto1,
@@ -29,7 +37,7 @@ const galleryImages = [
 </script>
 
 <template>
-  <section class="bg-[#EEEEF5] py-10 px-5 lg:px-20">
+  <section class="bg-[#EEEEF5] pt-8 px-5 lg:px-10">
     <div class="w-11/12 md:w-11/12 mx-auto">
       <!-- Section Title -->
       <div class="flex justify-between items-center">
@@ -49,48 +57,66 @@ const galleryImages = [
       </div>
 
       <!-- Gallery Grid -->
-      <div class="relative w-full overflow-x-auto mt-8">
-        <div class="flex md:grid md:grid-cols-6 gap-2">
-          <!-- First Large Image (Index 0) -->
-          <div class="flex-shrink-0 md:col-span-2 md:row-span-2 min-w-[260px] ">
-            <img
-              :src="galleryImages[0].src"
-              :alt="galleryImages[0].alt"
-              class="w-full h-[190px] md:h-full object-cover rounded-lg"
-            />
+      <swiper
+        :slidesPerView="1"
+        :spaceBetween="5"
+        :breakpoints="{
+          640: { slidesPerView: 2, spaceBetween: 20 },
+          1024: { slidesPerView: 3, spaceBetween: 30 },
+        }"
+        :navigation="true"
+        :pagination="{ clickable: true }"
+        :modules="[Navigation, Pagination]"
+        class="mySwiper mt-8 min-h-[250px] md:min-h-[469px]"
+      >
+        <!-- First Large Image (Index 0) -->
+        <swiper-slide class="relative flex-shrink-0 md:col-span-2 md:row-span-2 min-w-[260px]">
+          <img
+            :src="galleryImages[0].src"
+            :alt="galleryImages[0].alt"
+            class="w-full min-h-[190px] md:h-full object-cover rounded-lg"
+          />
+        </swiper-slide>
+        <!-- Grid Layout for Smaller Images -->
+        <swiper-slide class="relative flex-shrink-0 min-w-[260px] max-h-[469px]">
+          <div class="grid grid-cols-2 grid-rows-2 gap-2 h-full">
+            <div class="col-span-2 row-span-1">
+              <img
+                :src="galleryImages[1].src"
+                :alt="galleryImages[1].alt"
+                class="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+            <div>
+              <img
+                :src="galleryImages[3].src"
+                :alt="galleryImages[3].alt"
+                class="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+            <div>
+              <img
+                :src="galleryImages[4].src"
+                :alt="galleryImages[4].alt"
+                class="w-full h-full object-cover rounded-lg"
+              />
+            </div>
           </div>
-          <!-- Smaller Images (Index 1 and 2) -->
-          <div class="flex-shrink-0 md:col-span-2 md:row-span-1 min-w-[260px]">
-            <img
-              :src="galleryImages[1].src"
-              :alt="galleryImages[1].alt"
-              class="w-full h-[190px] md:h-full object-cover rounded-lg"
-            />
-          </div>
-          <div class="flex-shrink-0 md:col-span-2 md:row-span-2 min-w-[260px]">
-            <img
-              :src="galleryImages[2].src"
-              :alt="galleryImages[2].alt"
-              class="w-full h-[190px] md:h-full object-cover rounded-lg"
-            />
-          </div>
-          <!-- Second Large Image (Index 3 and 4) -->
-          <div class="flex-shrink-0 md:col-span-1 md:row-span-1 min-w-[150px]">
-            <img
-              :src="galleryImages[3].src"
-              :alt="galleryImages[3].alt"
-              class="w-full h-[190px] md:h-full object-cover rounded-lg"
-            />
-          </div>
-          <div class="flex-shrink-0 md:col-span-1 md:row-span-1 min-w-[150px]">
-            <img
-              :src="galleryImages[4].src"
-              :alt="galleryImages[4].alt"
-              class="w-full h-[190px] md:h-full object-cover rounded-lg"
-            />
-          </div>
-        </div>
-      </div>
+        </swiper-slide>
+        <swiper-slide class="relative flex-shrink-0 md:col-span-2 md:row-span-2 min-w-[260px]">
+          <img
+            :src="galleryImages[2].src"
+            :alt="galleryImages[2].alt"
+            class="w-full min-h-[190px] md:h-full object-cover rounded-lg"
+          />
+        </swiper-slide>
+      </swiper>
     </div>
   </section>
 </template>
+<style scoped>
+.mySwiper {
+  width: 100%;
+  padding: 5px 0;
+}
+</style>

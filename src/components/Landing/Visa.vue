@@ -50,12 +50,12 @@ const visas = [
 <template>
   <section class="py-16 bg-[#F8F8F8] text-[#545454] md:h-[752px]">
     <div class="w-11/12 md:w-10/12 mx-auto">
-      <div class="flex justify-between mb-4">
+      <div class="flex flex-col md:flex-row gap-4 justify-between mb-4">
         <!-- Title -->
         <h2 class="text-3xl font-bold text-[#545454]">Special Visa</h2>
 
         <!-- Tabs -->
-        <div class="flex space-x-2 md:space-x-4 justify-end">
+        <div class="flex space-x-6 md:space-x-4 justify-center md:justify-end">
           <button
             class="text-xl font-medium font-sans text-[#737373] before:w-0 hover:before:w-full before:bg-blue-600 before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-blue-600 transition-all duration-300 before:left-0 cursor-pointer"
             :class="{ 'text-blue-600 font-semibold': activeTab === 'All' }"
