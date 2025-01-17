@@ -2,13 +2,15 @@
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/Home.vue'
 // import PackageDetails from './components/PackageDetails/PackageDetails.vue';
-import TermsAndCondition from './components/TermsAndCondition/TermsAndCondition.vue';
+// import TermsAndCondition from './components/TermsAndCondition/TermsAndCondition.vue';
+import FAQs from './components/FAQs/FAQs.vue';
 </script>
 
 <template>
   <!-- <PackageDetails /> -->
    
-  <TermsAndCondition />
+  <!-- <TermsAndCondition /> -->
+  <FAQs />
   
 </template>
 
