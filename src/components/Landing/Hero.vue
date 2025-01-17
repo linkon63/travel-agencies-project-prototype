@@ -36,15 +36,15 @@ const activeTab = ref('visa')
       <div class="bg-white rounded-lg shadow-md p-6 space-y-6">
         <!-- Tabs -->
         <div class="flex justify-start space-x-6 border-b-2 border-formborder pb-2">
-          <button class="flex items-center space-x-1 text-blue border-b-2 border-blue font-medium">
+          <button class="flex items-center space-x-1 text-highblue border-b-2 border-highblue font-medium">
             <img src="../../assets/Images/Frame-1.png" alt="Visa" class="w-6 h-6" />
             <span>Visa</span>
           </button>
-          <button class="flex items-center space-x-1 text-formtextlight hover:text-blue">
+          <button class="flex items-center space-x-1 text-formtextlight hover:text-highblue">
             <img src="../../assets/Images/Frame-2.png" alt="Hajj Umrah" class="w-6 h-6" />
             <span>Hajj Umrah</span>
           </button>
-          <button class="flex items-center space-x-1 text-formtextlight hover:text-blue">
+          <button class="flex items-center space-x-1 text-formtextlight hover:text-highblue">
             <img src="../../assets/Images/Frame-2.png" alt="Holiday Package" class="w-6 h-6" />
             <span>Holiday Package</span>
           </button>
@@ -54,10 +54,10 @@ const activeTab = ref('visa')
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-9 gap-4">
           <!-- Country -->
           <div
-            class="col-span-4 md:col-span-4 border-2 border-formborder rounded-md p-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue"
+            class="col-span-4 md:col-span-4 border-2 border-formborder rounded-md p-2 px-4 focus:outline-none focus:ring-2 focus:ring-highblue"
           >
-            <label for="country" class="block text-sm text-formtextlight mb-1"> Country </label>
-            <select id="country" class="w-full text-formtextdark font-semibold text-xl">
+            <label for="country" class="block text-sm text-formtextlight mb-1 "> Country </label>
+            <select id="country" class="w-full text-formtextdark font-semibold text-xl border-none">
               <option>Country</option>
               <option>USA</option>
               <option>Canada</option>
@@ -67,10 +67,10 @@ const activeTab = ref('visa')
 
           <!-- Visa Type -->
           <div
-            class="col-span-4 md:col-span-4 border-2 border-formborder   rounded-md p-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue"
+            class="col-span-4 md:col-span-4 border-2 border-formborder   rounded-md p-2 px-4 focus:outline-none focus:ring-2 focus:ring-highblue"
           >
             <label for="visa-type" class="block text-sm text-formtextlight mb-1"> Visa Type </label>
-            <select id="visa-type" class="w-full text-formtextdark font-semibold text-xl">
+            <select id="visa-type" class="w-full text-formtextdark font-semibold text-xl border-none">
               <option>Tourist</option>
               <option>Business</option>
               <option>Student</option>
@@ -80,7 +80,7 @@ const activeTab = ref('visa')
           <!-- Search Button -->
           <div class="col-span-1 flex justify-center items-end">
             <button
-              class="w-full sm:w-12 h-12 bg-blue text-white rounded-md hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue"
+              class="w-full sm:w-12 h-12 bg-highblue text-white rounded-md hover:scale-105 focus:outline-none focus:ring-2 focus:ring-highblue"
             >
               <i class="pi pi-search"></i>
             </button>

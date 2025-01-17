@@ -56,7 +56,7 @@
             </div>
           </div>
           <button
-          class="mt-6 bg-blue text-white py-2 px-6 rounded-md shadow-md hover:bg-blue-600"
+          class="mt-6 bg-highblue text-white py-2 px-6 rounded-md shadow-md hover:bg-highblue-600"
         >
           Learn About <i class="pi pi-arrow-up-right"></i>
         </button>

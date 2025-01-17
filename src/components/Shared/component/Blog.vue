@@ -47,7 +47,7 @@ const travelCards = [
       <h2 class="text-3xl font-bold text-textheader">Our Blog</h2>
       <div class="flex mb-4 justify-end">
         <button
-          class="px-4 py-2 text-sm font-normal text-blue border border-blue rounded hover:bg-lightblue"
+          class="px-4 py-2 text-sm font-medium text-highblue border border-highblue rounded hover:bg-lightblue"
         >
           View All Blog <i class="pi pi-arrow-up-right px-1"></i>
         </button>
@@ -76,7 +76,7 @@ const travelCards = [
           class="flex-shrink-0 bg-white rounded-xl p-4 space-y-3 h-auto max-w-[280px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[400px] shadow-lg"
         >
           <h1
-            class="px-4 py-1 text-blue bg-lightblue rounded-full inline-block text-sm md:text-base"
+            class="px-4 py-1 text-highblue bg-lightblue rounded-full inline-block text-sm md:text-base"
           >
             {{ card.category }}
           </h1>
@@ -98,7 +98,7 @@ const travelCards = [
               <i class="pi pi-calendar" style="color: #178eef"></i> {{ card.date }}
             </p>
             <button
-              class="text-[13px] md:text-[16px] px-3 py-1 font-poppins rounded-md border border-blue text-blue transition-colors hover:bg-blue hover:text-white"
+              class="text-[13px] md:text-[16px] px-3 py-1 font-poppins rounded-md border border-blue text-highblue transition-colors hover:bg-blue hover:text-white"
             >
               View Details <i class="pi pi-arrow-up-right" style="font-size: 13px"></i>
             </button>

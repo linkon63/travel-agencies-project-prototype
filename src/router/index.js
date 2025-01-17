@@ -6,6 +6,7 @@ const router = createRouter({
   routes: [
     {
       path: '/',
+
       component: AppLayout,
       children: [
         {
@@ -24,9 +25,13 @@ const router = createRouter({
           component: () => import('../components/Blog/Blog.vue')
         },
         {
+          path: '/blogdetails',
+          name: 'blogdetails',
+          component: () => import('../components/Blog/BlogDetails.vue')
+        },
+        {
           path: '/contact',
           name: 'contact',
-
           component: () => import('../components/Contact/Contact.vue')
         },
         {

@@ -49,7 +49,7 @@ const galleryImages = [
           </p>
         </div>
         <button
-          class="px-1 py-2 w-[130px] text-sm font-normal text-blue border border-blue rounded hover:bg-lightblue hidden md:block"
+          class="px-1 py-2 w-[130px] text-sm font-normal text-highblue border border-highblue rounded hover:bg-lightblue hidden md:block"
         >
           View All
           <i class="pi pi-arrow-up-right ml-2"></i>

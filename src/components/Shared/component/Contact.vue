@@ -5,7 +5,7 @@
     <div class="grid md:grid-cols-2 container mx-auto gap-8 text-textheader w-10/12">
       <!-- Contact Details Section -->
       <div class="bg-white p-8 lg:py-20 lg:px-16 space-y-8 rounded-xl h-[450px] md:h-[596px]">
-        <h1 class="text-3xl text-h4 lg:text-h3 font-bold text-textheader">
+        <h1 class="text-3xl  lg:text-h3 font-bold text-textheader">
           Contact for Jicson Travels
         </h1>
 

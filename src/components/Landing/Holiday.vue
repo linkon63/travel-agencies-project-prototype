@@ -91,7 +91,7 @@ const HoliDays = [
               <h3 class="text-lg font-semibold text-textheader">{{ Holiday.title }}</h3>
               <p class="text-sm text-textpera mb-3">{{ Holiday.description }}</p>
               <div class="flex items-center ">
-                <span class="text-lg pi pi-star-fill text-yellow"></span>
+                <span class="text-lg pi pi-star-fill text-highyellow"></span>
                 <span class="text-sm ml-1 text-gray-700"
                   >{{ Holiday.rating }} ({{ Holiday.reviews }} Reviews)</span
                 >

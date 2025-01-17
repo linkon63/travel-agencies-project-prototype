@@ -90,7 +90,7 @@ const testimonials = [
             class="flex bg-white shadow-lg rounded-lg overflow-hidden min-w-[287px] md:min-w-[380px] h-[228px] md:h-[312px]"
           >
             <!-- Left Section -->
-            <div class="relative bg-blue flex justify-center items-center w-1/6 md:w-2/6">
+            <div class="relative bg-highblue flex justify-center items-center w-1/6 md:w-2/6">
               <img
                 class="absolute w-12 h-12 md:w-20 md:h-20 rounded-full ring-4 ring-white top-6 left-7 sm:10 md:left-16 md:top-8"
                 :src="testimonial.image"
@@ -115,7 +115,7 @@ const testimonials = [
                 <i
                   v-for="star in testimonial.rating"
                   :key="star"
-                  class="pi pi-star-fill text-yellow text-lg"
+                  class="pi pi-star-fill text-highyellow text-lg"
                 ></i>
               </div>
               <p class="text-textpera text-xs md:text-sm mt-4 block md:hidden">
@@ -124,7 +124,7 @@ const testimonials = [
               <p class="text-textpera text-xs md:text-sm mt-4 hidden md:block">
                 {{ testimonial.description }}
               </p>
-              <button class="text-blue font-medium text-sm md:text-base mt-4 hover:underline">
+              <button class="text-highblue font-medium text-sm md:text-base mt-4 hover:underline">
                 Read More
               </button>
             </div>

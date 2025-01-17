@@ -16,6 +16,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/vue-fontawesome": "^3.0.8",
     "@primevue/themes": "^4.2.5",
+    "flowbite": "^2.5.2",
     "primeicons": "^7.0.0",
     "primevue": "^4.2.5",
     "swiper": "^11.2.1",
