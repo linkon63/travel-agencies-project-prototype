@@ -48,12 +48,12 @@ const teams = [
 </script>
 
 <template>
-  <section class="py-16 bg-[#F8F8F8] text-[#545454]">
+  <section class="py-16 bg-card1bg text-textheader ">
     <div class="w-11/12 md:w-10/12 mx-auto">
       <div class="flex flex-col justify-end items-end">
         <!-- Title -->
-        <h2 class="text-right text-3xl font-bold font-sans mb-4">Meet Our Team</h2>
-        <p class="text-right text-[#5F5F5F] md:w-[712px] align-right font-sans mb-8">
+        <h2 class="text-right text-3xl font-bold font-poppins mb-4">Meet Our Team</h2>
+        <p class="text-right text-textpera md:w-[712px] align-right font-poppins mb-8">
           Make your next trip unforgettable with jicson travels ! From business class to economy
           class flights on international trips or domestic.
         </p>
@@ -86,8 +86,8 @@ const teams = [
             class="w-full min-h-[126px]  md:h-[277px] object-cover rounded-lg bg-[#D8ECFD]"
           />
           <div class="flex flex-col items-center justify-center">
-            <h3 class="mt-4 text-lg font-bold">{{ team.title }}</h3>
-            <p class="text-sm text-[#5F5F5F] mb-3">{{ team.description }}</p>
+            <h3 class="mt-4 text-lg font-bold font-inter">{{ team.title }}</h3>
+            <p class="text-sm text-textpera mb-3">{{ team.description }}</p>
             <div class="items-center mt-2 gap-2 hidden md:block">
               <font-awesome-icon :icon="['fab', 'facebook']" class="w-6" style="color: #1877f2" />
               <font-awesome-icon :icon="['fab', 'twitter']" class="w-6" />

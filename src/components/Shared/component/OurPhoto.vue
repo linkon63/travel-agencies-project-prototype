@@ -37,19 +37,19 @@ const galleryImages = [
 </script>
 
 <template>
-  <section class="bg-[#EEEEF5] pt-8 px-5 lg:px-10">
+  <section class="bg-graybg pt-8 px-5 lg:px-10">
     <div class="w-11/12 md:w-11/12 mx-auto">
       <!-- Section Title -->
       <div class="flex justify-between items-center">
-        <div class="font-sans">
-          <h2 class="text-2xl md:text-3xl font-bold text-[#545454]">Our Photo Gallery</h2>
-          <p class="text-sm md:text-lg font-normal w-[260px] md:w-[712px] text-[#5F5F5F]">
+        <div class="font-poppins">
+          <h2 class="text-2xl md:text-3xl font-bold text-textheader">Our Photo Gallery</h2>
+          <p class="text-sm md:text-lg font-normal w-[260px] md:w-[712px] text-textpera">
             Make your next trip unforgettable with Jicson Travels! From business class to economy
             class flights on international trips or domestic.
           </p>
         </div>
         <button
-          class="px-1 py-2 w-[130px] text-sm font-normal text-[#178EEF] border border-[#178EEF] rounded hover:bg-blue-100 hidden md:block"
+          class="px-1 py-2 w-[130px] text-sm font-normal text-blue border border-blue rounded hover:bg-lightblue hidden md:block"
         >
           View All
           <i class="pi pi-arrow-up-right ml-2"></i>

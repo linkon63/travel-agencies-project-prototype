@@ -49,13 +49,13 @@ const testimonials = [
 </script>
 
 <template>
-  <section class="bg-white px-3 md:p-8 md:py-4 lg:py-4 lg:px-2 w-11/12 mx-auto">
+  <section class="bg-white px-3 md:p-8 md:py-4 lg:py-4 lg:px-2 w-11/12 mx-auto font-poppins">
     <!-- Section Title -->
-    <div class="text-start font-sans py-12">
-      <h1 class="text-[#545454] text-3xl w-[328px] md:w-full font-bold leading-tight">
+    <div class="text-start font-poppins py-12">
+      <h1 class="text-textheader text-3xl w-[328px] md:w-full font-bold leading-tight">
         What Our Customer Say About Us <span class="inline-block">😊</span>
       </h1>
-      <p class="mt-2 text-[#5F5F5F] md:text-lg w-[328px] md:w-[955px]">
+      <p class="mt-2 text-textpera md:text-lg w-[328px] md:w-[955px]">
         Jicsom Travel is a dynamic & customer-focused travel agency that offers a wide range of
         travel services, including flight, hotel, Visa, Car Rent, vacation packages, & personalized
         travel itineraries.
@@ -90,7 +90,7 @@ const testimonials = [
             class="flex bg-white shadow-lg rounded-lg overflow-hidden min-w-[287px] md:min-w-[380px] h-[228px] md:h-[312px]"
           >
             <!-- Left Section -->
-            <div class="relative bg-[#178EEF] flex justify-center items-center w-1/6 md:w-2/6">
+            <div class="relative bg-blue flex justify-center items-center w-1/6 md:w-2/6">
               <img
                 class="absolute w-12 h-12 md:w-20 md:h-20 rounded-full ring-4 ring-white top-6 left-7 sm:10 md:left-16 md:top-8"
                 :src="testimonial.image"
@@ -105,26 +105,26 @@ const testimonials = [
 
             <!-- Right Section -->
             <div class="p-4 pl-8 flex flex-col w-4/6">
-              <h2 class="text-[#545454] text-lg md:text-2xl font-semibold">
+              <h2 class="text-textheader text-lg md:text-2xl font-semibold font-inter">
                 {{ testimonial.name }}
               </h2>
-              <p class="text-[#545454] text-sm md:text-lg font-normal">
+              <p class="text-textheader text-sm md:text-lg font-normal font-inter">
                 {{ testimonial.profession }}
               </p>
               <div class="flex mt-2 space-x-1">
                 <i
                   v-for="star in testimonial.rating"
                   :key="star"
-                  class="pi pi-star-fill text-yellow-400 text-lg"
+                  class="pi pi-star-fill text-yellow text-lg"
                 ></i>
               </div>
-              <p class="text-[#5F5F5F] text-xs md:text-sm mt-4 block md:hidden">
+              <p class="text-textpera text-xs md:text-sm mt-4 block md:hidden">
                 {{ testimonial.smdescription }}
               </p>
-              <p class="text-[#5F5F5F] text-xs md:text-sm mt-4 hidden md:block">
+              <p class="text-textpera text-xs md:text-sm mt-4 hidden md:block">
                 {{ testimonial.description }}
               </p>
-              <button class="text-[#178EEF] font-medium text-sm md:text-base mt-4 hover:underline">
+              <button class="text-blue font-medium text-sm md:text-base mt-4 hover:underline">
                 Read More
               </button>
             </div>

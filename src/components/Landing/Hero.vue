@@ -8,7 +8,7 @@ const activeTab = ref('visa')
 
 <template>
   <section
-    class="relative bg-cover bg-center items-center z-10 w-full h-[824px]"
+    class="relative bg-cover bg-center items-center z-10 w-full h-[824px] font-poppins"
     :style="{ backgroundImage: `url(${heroBg})` }"
   >
     <!-- Overlay -->
@@ -23,9 +23,9 @@ const activeTab = ref('visa')
     </div>
 
     <!-- Content -->
-    <div class="relative z-10 container mx-auto text-white px-4">
+    <div class="relative z-10 container mx-auto text-white px-4 w-10/12">
       <!-- Title & Description -->
-      <div class="mb-6">
+      <div class="mb-6 w-9/12">
         <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold mb-4">
           Enjoy Your Awesome Trip with Jicson Travels
         </h1>
@@ -35,18 +35,16 @@ const activeTab = ref('visa')
       <!-- Form Section -->
       <div class="bg-white rounded-lg shadow-md p-6 space-y-6">
         <!-- Tabs -->
-        <div class="flex justify-start space-x-6 border-b pb-2">
-          <button
-            class="flex items-center space-x-1 text-[#178EEF] border-b-2 border-[#178EEF] font-medium"
-          >
+        <div class="flex justify-start space-x-6 border-b-2 border-formborder pb-2">
+          <button class="flex items-center space-x-1 text-blue border-b-2 border-blue font-medium">
             <img src="../../assets/Images/Frame-1.png" alt="Visa" class="w-6 h-6" />
             <span>Visa</span>
           </button>
-          <button class="flex items-center space-x-1 text-gray-500 hover:text-[#178EEF]">
+          <button class="flex items-center space-x-1 text-formtextlight hover:text-blue">
             <img src="../../assets/Images/Frame-2.png" alt="Hajj Umrah" class="w-6 h-6" />
             <span>Hajj Umrah</span>
           </button>
-          <button class="flex items-center space-x-1 text-gray-500 hover:text-[#178EEF]">
+          <button class="flex items-center space-x-1 text-formtextlight hover:text-blue">
             <img src="../../assets/Images/Frame-2.png" alt="Holiday Package" class="w-6 h-6" />
             <span>Holiday Package</span>
           </button>
@@ -55,12 +53,11 @@ const activeTab = ref('visa')
         <!-- Form -->
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-9 gap-4">
           <!-- Country -->
-          <div class="col-span-4 md:col-span-4">
-            <label for="country" class="block text-sm text-gray-700 mb-1"> Country </label>
-            <select
-              id="country"
-              class="w-full border rounded-md py-3 px-4 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            >
+          <div
+            class="col-span-4 md:col-span-4 border-2 border-formborder rounded-md p-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue"
+          >
+            <label for="country" class="block text-sm text-formtextlight mb-1"> Country </label>
+            <select id="country" class="w-full text-formtextdark font-semibold text-xl">
               <option>Country</option>
               <option>USA</option>
               <option>Canada</option>
@@ -69,12 +66,11 @@ const activeTab = ref('visa')
           </div>
 
           <!-- Visa Type -->
-          <div class="col-span-4 md:col-span-4">
-            <label for="visa-type" class="block text-sm text-gray-700 mb-1"> Visa Type </label>
-            <select
-              id="visa-type"
-              class="w-full border rounded-md py-3 px-4 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            >
+          <div
+            class="col-span-4 md:col-span-4 border-2 border-formborder   rounded-md p-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue"
+          >
+            <label for="visa-type" class="block text-sm text-formtextlight mb-1"> Visa Type </label>
+            <select id="visa-type" class="w-full text-formtextdark font-semibold text-xl">
               <option>Tourist</option>
               <option>Business</option>
               <option>Student</option>
@@ -84,7 +80,7 @@ const activeTab = ref('visa')
           <!-- Search Button -->
           <div class="col-span-1 flex justify-center items-end">
             <button
-              class="w-full sm:w-12 h-12 bg-[#178EEF] text-white rounded-md hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              class="w-full sm:w-12 h-12 bg-blue text-white rounded-md hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue"
             >
               <i class="pi pi-search"></i>
             </button>

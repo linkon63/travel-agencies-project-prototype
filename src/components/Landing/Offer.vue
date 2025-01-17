@@ -31,14 +31,14 @@ const cards = [
 </script>
 
 <template>
-  <section class="pt-12 inset-0 z-0" :style="{ backgroundImage: `url(${offerBg})` }">
+  <section class="pt-12 inset-0 z-0 font-poppins" :style="{ backgroundImage: `url(${offerBg})` }">
     <div class="mx-auto px-4 w-11/12 z-20">
       <!-- Title and Description -->
       <div class="text-start mb-8">
-        <h2 class="text-3xl font-bold text-[32px] text-[#545454] font-sans mb-2">
+        <h2 class="text-3xl font-bold text-[32px] text-textheader font-poppins mb-2">
           Exclusive Offers <span>🤗</span>
         </h2>
-        <p class="text-[#5F5F5F] font-normal font-sans text-base leading-6">
+        <p class="text-textpera font-normal font-poppins text-base leading-6">
           Jicson Travel is a dynamic & customer-focused travel agency that offers a wide range of
           travel services, including flight, hotel, visa, car rent, vacation packages, &
           personalized travel itineraries.

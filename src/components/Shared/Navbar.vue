@@ -16,11 +16,11 @@ const toggleMobileMenu = () => {
       </div>
 
       <!-- Navbar Links -->
-      <ul class="items-center gap-5 text-[16px] font-normal text-gray-700 lg:flex hidden">
+      <ul class="items-center gap-5 text-[16px] font-normal text-textheader lg:flex hidden">
         <li>
           <router-link
             to="/"
-            class="before:w-0 hover:before:w-full before:bg-blue-600 before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-blue-600 leading-4 transition-all duration-300 before:left-0 cursor-pointer capitalize"
+            class="before:w-0 hover:before:w-full before:bg-blue before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-blue leading-4 transition-all duration-300 before:left-0 cursor-pointer capitalize"
           >
             Home
           </router-link>
@@ -28,7 +28,7 @@ const toggleMobileMenu = () => {
         <li>
           <router-link
             to="/visa"
-            class="before:w-0 hover:before:w-full before:bg-blue-600 before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-blue-600 transition-all duration-300 before:left-0 cursor-pointer capitalize flex items-center gap-2"
+            class="before:w-0 hover:before:w-full before:bg-blue before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-blue transition-all duration-300 before:left-0 cursor-pointer capitalize flex items-center gap-2"
           >
             Visa Service
             <font-awesome-icon :icon="['fas', 'angle-down']" />
@@ -37,7 +37,7 @@ const toggleMobileMenu = () => {
         <li>
           <router-link
             to="/about"
-            class="before:w-0 hover:before:w-full before:bg-blue-600 before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-blue-600 transition-all duration-300 before:left-0 cursor-pointer capitalize"
+            class="before:w-0 hover:before:w-full before:bg-blue before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-blue transition-all duration-300 before:left-0 cursor-pointer capitalize"
           >
             About Us
           </router-link>
@@ -45,7 +45,7 @@ const toggleMobileMenu = () => {
         <li>
           <router-link
             to="/blog"
-            class="before:w-0 hover:before:w-full before:bg-blue-600 before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-blue-600 transition-all duration-300 before:left-0 cursor-pointer capitalize"
+            class="before:w-0 hover:before:w-full before:bg-blue before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-blue transition-all duration-300 before:left-0 cursor-pointer capitalize"
           >
             Blog
           </router-link>
@@ -53,7 +53,7 @@ const toggleMobileMenu = () => {
         <li>
           <router-link
             to="/contact"
-            class="before:w-0 hover:before:w-full before:bg-blue-600 before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-blue-600 transition-all duration-300 before:left-0 cursor-pointer capitalize"
+            class="before:w-0 hover:before:w-full before:bg-blue before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-blue transition-all duration-300 before:left-0 cursor-pointer capitalize"
           >
             Contact Us
           </router-link>
@@ -61,7 +61,7 @@ const toggleMobileMenu = () => {
         <li>
           <router-link
             to=""
-            class="before:w-0 hover:before:w-full before:bg-blue-600 before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-blue-600 transition-all duration-300 before:left-0 cursor-pointer capitalize"
+            class="before:w-0 hover:before:w-full before:bg-blue before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-blue transition-all duration-300 before:left-0 cursor-pointer capitalize"
           >
             <font-awesome-icon :icon="['fas', 'phone-volume']" />
             +880 1994 902050
@@ -89,7 +89,7 @@ const toggleMobileMenu = () => {
         <li>
           <router-link
             to="/"
-            class="hover:border-b-blue-600 border-b-[2px] border-transparent transition-all duration-500 cursor-pointer capitalize"
+            class="hover:border-b-blue border-b-[2px] border-transparent transition-all duration-500 cursor-pointer capitalize"
           >
             Home
           </router-link>
@@ -97,7 +97,7 @@ const toggleMobileMenu = () => {
         <li>
           <router-link
             to="/visa"
-            class="hover:border-b-blue-600 border-b-[2px] border-transparent transition-all duration-500 cursor-pointer capitalize"
+            class="hover:border-b-blue border-b-[2px] border-transparent transition-all duration-500 cursor-pointer capitalize"
           >
             Visa Service
           </router-link>
@@ -105,7 +105,7 @@ const toggleMobileMenu = () => {
         <li>
           <router-link
             to="/about"
-            class="hover:border-b-blue-600 border-b-[2px] border-transparent transition-all duration-500 cursor-pointer capitalize"
+            class="hover:border-b-blue border-b-[2px] border-transparent transition-all duration-500 cursor-pointer capitalize"
           >
             About Us
           </router-link>
@@ -113,7 +113,7 @@ const toggleMobileMenu = () => {
         <li>
           <router-link
             to="/blog"
-            class="hover:border-b-blue-600 border-b-[2px] border-transparent transition-all duration-500 cursor-pointer capitalize"
+            class="hover:border-b-blue border-b-[2px] border-transparent transition-all duration-500 cursor-pointer capitalize"
           >
             Blog
           </router-link>
@@ -121,7 +121,7 @@ const toggleMobileMenu = () => {
         <li>
           <router-link
             to="/contact"
-            class="hover:border-b-blue-600 border-b-[2px] border-transparent transition-all duration-500 cursor-pointer capitalize"
+            class="hover:border-b-blue border-b-[2px] border-transparent transition-all duration-500 cursor-pointer capitalize"
           >
             Contact Us
           </router-link>
@@ -129,7 +129,7 @@ const toggleMobileMenu = () => {
         <li>
           <router-link
             to=""
-            class="hover:border-b-blue-600 border-b-[2px] border-transparent transition-all duration-500 cursor-pointer capitalize"
+            class="hover:border-b-blue border-b-[2px] border-transparent transition-all duration-500 cursor-pointer capitalize"
           >
             +880 1994 902050
           </router-link>

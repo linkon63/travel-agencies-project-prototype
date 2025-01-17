@@ -40,14 +40,14 @@ const travelCards = [
 ]
 </script>
 <template>
-  <section class="py-16 bg-[#F8F8F8] text-[#545454]">
+  <section class="py-16 bg-[#F8F8F8] text-textheader">
     <div class="w-11/12 md:w-10/12 mx-auto">
       <!-- Title -->
 
-      <h2 class="text-3xl font-bold text-[#545454]">Our Blog</h2>
+      <h2 class="text-3xl font-bold text-textheader">Our Blog</h2>
       <div class="flex mb-4 justify-end">
         <button
-          class="px-4 py-2 text-sm font-normal text-[#178EEF] border border-[#178EEF] rounded hover:bg-blue-100"
+          class="px-4 py-2 text-sm font-normal text-blue border border-blue rounded hover:bg-lightblue"
         >
           View All Blog <i class="pi pi-arrow-up-right px-1"></i>
         </button>
@@ -76,7 +76,7 @@ const travelCards = [
           class="flex-shrink-0 bg-white rounded-xl p-4 space-y-3 h-auto max-w-[280px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[400px] shadow-lg"
         >
           <h1
-            class="px-4 py-1 text-[#178EEF] bg-[#E1F1FE] rounded-full inline-block text-sm md:text-base"
+            class="px-4 py-1 text-blue bg-lightblue rounded-full inline-block text-sm md:text-base"
           >
             {{ card.category }}
           </h1>
@@ -98,7 +98,7 @@ const travelCards = [
               <i class="pi pi-calendar" style="color: #178eef"></i> {{ card.date }}
             </p>
             <button
-              class="text-[13px] md:text-[16px] px-3 py-1 font-sans rounded-md border border-[#178EEF] text-[#178EEF] transition-colors hover:bg-[#178EEF] hover:text-white"
+              class="text-[13px] md:text-[16px] px-3 py-1 font-poppins rounded-md border border-blue text-blue transition-colors hover:bg-blue hover:text-white"
             >
               View Details <i class="pi pi-arrow-up-right" style="font-size: 13px"></i>
             </button>
