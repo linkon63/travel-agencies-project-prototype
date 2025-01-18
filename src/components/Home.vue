@@ -1,9 +1,16 @@
-<script setup></script>
+<script setup>
+
+
+
+</script>
 
 <template>
-  <div class="">
-<h2>Home</h2>
+
+  <div class="greetings">
+    <h3>
+    </h3>
+
   </div>
 </template>
 
-<style scoped></style>
+
