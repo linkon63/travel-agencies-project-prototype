@@ -46,11 +46,11 @@ const travelCards = [
 
       <h2 class="text-3xl font-bold text-textheader">Our Blog</h2>
       <div class="flex mb-4 justify-end">
-        <button
+        <router-link to="/blog"
           class="px-4 py-2 text-sm font-medium text-highblue border border-highblue rounded hover:bg-lightblue"
         >
           View All Blog <i class="pi pi-arrow-up-right px-1"></i>
-        </button>
+        </router-link>
       </div>
       <!-- blog card start -->
 

@@ -60,7 +60,7 @@ const cards = [
 </script>
 
 <template>
-  <section class="mb-20 ">
+  <section class="mb-20">
     <!-- Blog header start -->
     <section class="bg-hero-pattern text-center text-white">
       <div class="bg-markcolor opacity-70 py-28">
@@ -75,7 +75,7 @@ const cards = [
 
     <!-- Blog Hero-section start -->
 
-    <section class="fv bg-card1bg py-10 px-3 ">
+    <section class="fv bg-card1bg py-10 px-3">
       <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3 w-10/12 mx-auto">
         <div
           v-for="(card, index) in cards"
@@ -100,18 +100,22 @@ const cards = [
             <p class="text-textheader text-[13px] md:text-[16px]">
               <i class="pi pi-calendar text-highblue"></i> {{ card.date }}
             </p>
-            <button
+            <router-link
+              to="/blog-details"
               class="text-[13px] md:text-[16px] md:px-3 lg:px-2 md:rounded-md border border-highblue text-highblue"
             >
               View Details <i class="pi pi-arrow-up-right" style="font-size: 13px"></i>
-            </button>
+            </router-link>
           </div>
         </div>
       </div>
       <div class="flex justify-center mt-10">
-        <button class="border border-highblue text-highblue px-6 py-2 rounded-md">
+        <router-link
+          to="/blog-details"
+          class="border border-highblue text-highblue px-6 py-2 rounded-md"
+        >
           Load Details <i class="pi pi-arrow-up-right" style="font-size: 13px"></i>
-        </button>
+        </router-link>
       </div>
     </section>
 

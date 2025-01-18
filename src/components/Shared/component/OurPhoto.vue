@@ -48,12 +48,12 @@ const galleryImages = [
             class flights on international trips or domestic.
           </p>
         </div>
-        <button
+        <router-link to="/photo-gallery"
           class="px-1 py-2 w-[130px] text-sm font-normal text-highblue border border-highblue rounded hover:bg-lightblue hidden md:block"
         >
           View All
           <i class="pi pi-arrow-up-right ml-2"></i>
-        </button>
+        </router-link>
       </div>
 
       <!-- Gallery Grid -->
