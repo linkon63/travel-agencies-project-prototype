@@ -75,12 +75,12 @@ const cards = [
 
     <!-- Blog Hero-section start -->
 
-    <section class="fv bg-card1bg py-10 px-3">
-      <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3 w-10/12 mx-auto">
+    <section class="bg-card1bg py-10 px-3">
+      <div class="grid gap-4 grid-cols-2 lg:grid-cols-3 w-10/12 mx-auto">
         <div
           v-for="(card, index) in cards"
           :key="index"
-          class="py-4 px-1 md:px-5 md:py-8 bg-white space-y-2 rounded-lg"
+          class="py-4 px-3 md:px-5 md:py-8 bg-white space-y-2 rounded-lg "
         >
           <h1 :class="`px-4 py-1 rounded-full inline-block text-highblue bg-secondarybg`">
             {{ card.category }}
@@ -102,7 +102,7 @@ const cards = [
             </p>
             <router-link
               to="/blog-details"
-              class="text-[13px] md:text-[16px] md:px-3 lg:px-2 md:rounded-md border border-highblue text-highblue"
+              class="text-[13px] md:text-[16px] md:px-3 lg:px-2 md:rounded-md border border-highblue text-highblue mx-auto"
             >
               View Details <i class="pi pi-arrow-up-right" style="font-size: 13px"></i>
             </router-link>

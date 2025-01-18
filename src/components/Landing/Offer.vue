@@ -35,7 +35,7 @@ const cards = [
     <div class="mx-auto px-4 w-11/12 z-20">
       <!-- Title and Description -->
       <div class="text-start mb-8">
-        <h2 class="text-3xl font-bold text-[32px] text-textheader font-poppins mb-2">
+        <h2 class=" font-bold text-[32px] text-textheader font-poppins mb-2">
           Exclusive Offers <span>🤗</span>
         </h2>
         <p class="text-textpera font-normal font-poppins text-base leading-6">

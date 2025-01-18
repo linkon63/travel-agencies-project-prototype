@@ -19,7 +19,7 @@
         <!-- Blog-Details header end -->
 
          <section class="bg-card1bg py-10 px-2">
-            <section class="container mx-auto grid grid-cols-1 lg:px-48 mb-14">
+            <section class="w-10/12 mx-auto grid grid-cols-1 lg:px-48 mb-14">
               <!--top image section start -->
               <div class="grid gap-y-5 pb-8">
                 <div class="p-2 lg:p-4 bg-white rounded-lg">

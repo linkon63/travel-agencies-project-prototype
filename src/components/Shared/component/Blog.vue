@@ -46,7 +46,8 @@ const travelCards = [
 
       <h2 class="text-3xl font-bold text-textheader">Our Blog</h2>
       <div class="flex mb-4 justify-end">
-        <router-link to="/blog"
+        <router-link
+          to="/blog"
           class="px-4 py-2 text-sm font-medium text-highblue border border-highblue rounded hover:bg-lightblue"
         >
           View All Blog <i class="pi pi-arrow-up-right px-1"></i>
@@ -97,11 +98,13 @@ const travelCards = [
             <p class="text-textheader text-[13px] md:text-[16px]">
               <i class="pi pi-calendar" style="color: #178eef"></i> {{ card.date }}
             </p>
-            <button
-              class="text-[13px] md:text-[16px] px-3 py-1 font-poppins rounded-md border border-blue text-highblue transition-colors hover:bg-blue hover:text-white"
-            >
-              View Details <i class="pi pi-arrow-up-right" style="font-size: 13px"></i>
-            </button>
+            <div>
+              <router-link to="/blog-details"
+                class="text-[13px] md:text-[16px] px-3 py-1 font-poppins rounded-md border border-blue text-highblue transition-colors hover:bg-blue hover:text-white"
+              >
+                View Details <i class="pi pi-arrow-up-right" style="font-size: 13px"></i>
+              </router-link>
+            </div>
           </div>
         </swiper-slide>
       </swiper>

@@ -5,8 +5,11 @@
 </script>
 
 <template>
-  <div>
- 
+
+  <div class="greetings">
+    <h3>
+    </h3>
+
   </div>
 </template>
 

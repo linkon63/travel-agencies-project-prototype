@@ -106,16 +106,19 @@ const visas = [
             class="w-full h-[148px] md:h-[348px] object-cover rounded-t-lg"
           />
           <h3 class="mt-2 text-lg font-semibold truncate">{{ visa.title }}</h3>
-          <div class="flex items-center  mt-2">
+          <div class="flex items-center mt-2">
             <span class="pi pi-star-fill text-highyellow"></span>
             <span class="text-gray-600 text-sm ml-1">{{ visa.rating }}</span>
             <span class="text-gray-400 text-sm ml-2">({{ visa.reviews }} Reviews)</span>
           </div>
-          <button
-            class="mt-4 px-4 py-2 text-sm text-highblue border border-highblue rounded hover:bg-lightblue"
-          >
-            View Details <i class="pi pi-arrow-up-right px-1"></i>
-          </button>
+          <div class="mt-4">
+            <router-link
+              to="/visa"
+              class=" px-4 py-2 text-sm text-highblue border border-highblue rounded hover:bg-lightblue"
+            >
+              View Details <i class="pi pi-arrow-up-right px-1"></i>
+            </router-link>
+          </div>
         </swiper-slide>
       </swiper>
     </div>

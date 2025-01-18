@@ -6,4 +6,3 @@ import { RouterView } from 'vue-router'
   <router-view />
   <!-- <Navbar /> -->
 </template>
-

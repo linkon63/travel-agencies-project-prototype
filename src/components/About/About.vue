@@ -1,6 +1,6 @@
 <script setup>
 import Contact from '../Shared/component/Contact.vue'
-import Testimonial from '../Shared/component/Testimonial.vue'
+import Testimonial from '../Shared/component/Testimonial.vue' /* PartiallyEnd: #3632/scriptSetup.vue */
 </script>
 
 <template>
@@ -19,7 +19,7 @@ import Testimonial from '../Shared/component/Testimonial.vue'
 
     <!-- 2nd part start -->
     <section class="mb-20">
-      <div class="grid md:grid-cols-2 container md:px-5 mx-auto mt-14 gap-x-5">
+      <div class="grid md:grid-cols-2 w-10/12 md:px-5 mx-auto mt-14 gap-x-5">
         <!-- text section start -->
         <div class="grid md:space-y-5 xs:px-2">
           <h1
@@ -106,7 +106,7 @@ import Testimonial from '../Shared/component/Testimonial.vue'
 
     <!-- 3rd part start -->
     <section class="bg-secondarybg">
-      <div class="container mx-auto xs:space-y-5 md:space-y-0 xs:py-10 md:py-0">
+      <div class="mx-auto xs:space-y-5 md:space-y-0 xs:py-10 md:py-0">
         <div
           class="grid grid-cols-2 place-content-center xs:space-y-5 lg:space-y-0 lg:flex lg:justify-between items-center text-number lg:px-14 lg:py-12"
         >
@@ -126,7 +126,7 @@ import Testimonial from '../Shared/component/Testimonial.vue'
             <h1 class="xs:text-h3 md:text-h2 font-bold">48+</h1>
             <p class="xs:text-small md:text-xl">Country Served</p>
           </div>
-          <div class="grid  lg:block place-items-center">
+          <div class="grid lg:block place-items-center">
             <h1 class="xs:text-h3 md:text-h2 font-bold">
               4.9 <i class="pi pi-star-fill xs:text-[25px] md:text-[35px]"></i>
             </h1>
@@ -149,7 +149,7 @@ import Testimonial from '../Shared/component/Testimonial.vue'
       <div class="grid grid-cols-1 xl:grid-cols-2 xl:relative">
         <div class="container mx-auto md:pt-12 xl:py-32 z-50">
           <div
-            class="vision  lg:bg-secondarybg xs:px-3 xs:mb-10 lg:mb-0 lg:p-10 xl:absolute xl:w-[53%] space-y-3 xl:py-24 xl:ps-40 xl:pe-16"
+            class="vision lg:bg-secondarybg xs:px-3 xs:mb-10 lg:mb-0 lg:p-10 xl:absolute xl:w-[53%] space-y-3 xl:py-24 xl:ps-40 xl:pe-16"
           >
             <h1 class="text-h3 text-number font-bold">Vision</h1>
             <p class="text-textpera md:text-xl xl:text-sm 2xl:text-[16px]">
@@ -324,7 +324,7 @@ import Testimonial from '../Shared/component/Testimonial.vue'
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1140px) {
   .vision::after {
     position: absolute;
     content: '';
@@ -347,6 +347,5 @@ import Testimonial from '../Shared/component/Testimonial.vue'
     border-top: 35px solid rgba(255, 255, 255, 0.738);
     bottom: -35px;
     right: 0;
-  }
-}
+    }}
 </style>

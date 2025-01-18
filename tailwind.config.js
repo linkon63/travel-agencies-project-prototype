@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 
+
 const tailwindcssPrimeui=require('tailwindcss-primeui')
 // const flowbite = require("flowbite-react/tailwind");
 export default {
