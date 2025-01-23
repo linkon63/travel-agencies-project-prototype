@@ -1,6 +1,6 @@
 <script setup>
 import { reactive } from 'vue'
-
+import bannerbg from "@/assets/Images/bannerbg.png"
 import Accordion from 'primevue/accordion'
 import AccordionContent from 'primevue/accordioncontent'
 import AccordionHeader from 'primevue/accordionheader'
@@ -52,7 +52,7 @@ const states = reactive({
 <template>
   <section class="mb-20">
     <!-- Visa header start -->
-    <section class="bg-hero-pattern text-center text-white">
+    <section class="text-center text-white" :style="{ backgroundImage: `url(${bannerbg})`}">
       <div class="bg-markcolor opacity-70 py-28">
         <h1 class="text-h2 font-semibold">Visa</h1>
         <div class="text-title font-thin space-x-5">

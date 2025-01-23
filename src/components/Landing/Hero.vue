@@ -8,11 +8,11 @@ const activeTab = ref('visa')
 
 <template>
   <section
-    class="relative bg-cover bg-center items-center z-10 w-full h-[824px] font-poppins"
+    class="relative bg-cover  bg-center items-center z-10 w-full h-[824px] font-poppins"
     :style="{ backgroundImage: `url(${heroBg})` }"
   >
     <!-- Overlay -->
-    <div class="absolute inset-0 z-0" :style="{ backgroundImage: `url(${hero})` }"></div>
+    <div class="absolute inset-0 z-0 bg-cover w-full bg-no-repeat" :style="{ backgroundImage: `url(${hero})`}"></div>
     <!-- Plane Image -->
     <div class="flex justify-start md:left-[150px] relative z-10">
       <img

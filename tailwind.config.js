@@ -11,7 +11,7 @@ export default {
   ],
   theme: {
     extend: { backgroundImage: {
-      'hero-pattern': "url('./src/components/About/img/309 1.png')",
+      'hero-pattern': "url('@/assets/Images/bannerbg.png)",
 
     },},
     fontFamily: {

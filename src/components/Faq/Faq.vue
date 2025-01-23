@@ -1,9 +1,11 @@
-<script setup></script>
+<script setup>
+import bannerbg from "@/assets/Images/bannerbg.png"
+</script>
 <template>
 
       <section class="">
 
-        <section class="bg-hero-pattern text-center text-white">
+        <section class=" text-center text-white" :style="{ backgroundImage: `url(${bannerbg})`}">
       <div class="bg-markcolor opacity-70 py-28">
         <h1 class="text-h2 font-semibold">FAQs</h1>
         <div class="text-title font-thin space-x-5">

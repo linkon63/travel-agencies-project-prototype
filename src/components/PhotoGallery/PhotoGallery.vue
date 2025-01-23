@@ -1,13 +1,13 @@
 <script setup>
 import Contact from '../Shared/component/Contact.vue';
 
-
+import bannerbg from "@/assets/Images/bannerbg.png"
 </script>
 
 <template>
   <section>
     <!-- Photo Gallery header start -->
-    <section class="bg-hero-pattern text-center text-white">
+    <section class=" text-center text-white" :style="{ backgroundImage: `url(${bannerbg})`}">
       <div class="bg-markcolor opacity-70 py-28">
         <h1 class="text-h3 md:text-h2 font-semibold">Our Photo Gallery</h1>
         <div class="md:text-title font-thin space-x-5">
